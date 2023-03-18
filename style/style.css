@@ -1,169 +1,191 @@
-  *{
-    font-family: sans-serif;
-    padding: 0%;
-    margin: 0%;
-  }
-  
-  .container{
-    display: flex;
+*{
+  font-family: sans-serif;
+  padding: 0%;
+  margin: 0%;
+}
+
+.container{
+  display: flex;
+}
+
+/*Menu izq*/
+.menu{
+  color:white;
+  line-height: 10px;
+  width: 400px;
+  height: 438px;
+  background-color: rgb(51, 72, 93); 
+  margin-top: 200px;
+}
+
+img{
+  position: absolute;
+  width: 400px;
+  height: 200px;
+}
+
+li{
+  display: block;
+  padding:20px 15px;
+  margin-left: 130px;
+  margin-right: 100px;
+  box-sizing:border-box;
+}
+
+.menu li:hover, .activado{
+  color:#13c9c9;
+  background: rgba(255,255,255,0.1);
+}
+
+/*boton perfil contacto y idioma*/
+
+.profile{
+  box-sizing:border-box;
+  background-color: rgb(51, 72, 93);
+  height: 70px;
+  position: static;
+  margin-top: 270px;
+}
+
+.profile a:hover, .activado{
+  color:#13c9c9;
+  background: rgba(255,255,255,0.1);
+}
+
+.button1{
+  box-sizing: border-box;
+  position: absolute;
+  width: 400px;
+  height: 54px;
+  left: 0px;
+  top: 600px;
+  background: #34485D;
+  color: white;
+  } 
+
+.button2{
+  box-sizing: border-box;
+  position: absolute;
+  width: 202px;
+  height: 54px;
+  left: 0px;
+  top: 654px;
+  background: #508FCF;
+  color: white;
   }
 
-  /*Lista Menu izq*/
-  .menu{
-    color:white;
-    line-height: 10px;
-    width: 400px;
-    height: 319px;
-    background-color: rgb(51, 72, 93); 
-    margin-top: 200px;
-  }
-  
-  img{
-    position: absolute;
-    width: 400px;
-    height: 200px;
+  .button3{
+  box-sizing: border-box;
+  position: absolute;
+  width: 202px;
+  height: 54px;
+  left: 198px;
+  top: 654px;
+  background: #508FCF;
+  color: white;
   }
 
-  li{
-    display: block;
-    padding:20px 15px;
-    margin-left: 130px;
-    margin-right: 100px;
-    box-sizing:border-box;
-  }
+  /*Descripcion*/
 
-  .menu li:hover, .activado{
-    color:#13c9c9;
-    background: rgba(255,255,255,0.1);
-  }
+input {
+  margin-right: 10px;
+  display: block;
+  padding: 5px;
+  margin-top: 10px;
+  margin-right: 60px;
+  margin-left: 60px;
+  color: black;
+  width: 1000px;
+}
 
-  /*boton perfil*/
-  
-  .profile{
-    box-sizing:border-box;
-    background-color: rgb(51, 72, 93);
-    height: 260px;
-    position: static;
-    margin-top: 130px;
-    
-  }
+p{
+  width: 800px;
+  margin-top: 10px;
+  margin-left: 60px;
+  font-weight: bold;
+}
 
-  .profile a:hover, .activado{
-    color:#13c9c9;
-    background: rgba(255,255,255,0.1);
-  }
+.description {
+  padding: 5px;
+}
 
-  .setting{
-    color: white;
-    display: block;
-    background-color: rgb(51, 72, 93);
-    cursor:pointer;
-    font-weight: bold;
-    border: none;
-    width: 100px;
-    height: 30px;
-    left: 910px;
+.Titulo {
+ 
+  text-align: center;
+  font-weight: bold;
+  width: 515px;
+  height: 29;
+  margin-top: 30px;
+  margin-right: 0px;
+  margin-left: 299px;
+}
 
-  }
+/*Descripcion Boton*/
 
-    /*Descripcion*/
+.button {
+  color: white;
+  display: block;
+  background-color:  rgb(94, 175, 142);
+  cursor:pointer;
+  font-weight: bold;
+  border: none;
+  position: relative;
+  width: 100px;
+  height: 30px;
+  left: 910px;
+}
 
-  input {
-    margin-right: 10px;
-    display: block;
-    padding: 5px;
-    margin-top: 10px;
-    margin-right: 60px;
-    margin-left: 60px;
-    color: black;
-    width: 1000px;
-  }
+/*video*/
 
-  p{
-    width: 800px;
-    margin-top: 10px;
-    margin-left: 60px;
-    font-weight: bold;
-  }
+.upload-btn-wrapper {
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+}
 
-  .description {
-    padding: 5px;
-  }
+.btn-upload {
+  border: 0px;
+  background-color: white;
+  font-size: 15px;
+  height: 30px;
+  width: 50px;
+  margin-top: 10px;
+  margin-right: 90px;
+  margin-left: 60px;
+}
 
-  .Titulo {
-    margin-top: 30px;
-    text-align: center;
-    font-weight: bold;
-  }
+.upload-btn-wrapper input[type="file"] {
+  font-size: 100px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+}
 
-  /*Descripcion Boton*/
+.preview-video {
+  width: 1010px;
+  height: 300px;
+  border-radius: 0px;
+  margin-top: 10px;
+  margin-right: 60px;
+  margin-left: 60px;
+  background: #D2EEE2;
+}
 
-  .button {
-    color: white;
-    display: block;
-    background-color:  rgb(94, 175, 142);
-    cursor:pointer;
-    font-weight: bold;
-    border: none;
-    position: relative;
-    width: 100px;
-    height: 30px;
-    left: 910px;
-  }
+.footer {
+  margin-left: 890px;
+}
 
-  /*video*/
+/*responsive*/
 
-  .upload-btn-wrapper {
-    position: relative;
-    overflow: hidden;
-    display: inline-block;
-  }
-  
-  .btn-upload {
-    border: 0px;
-    background-color: white;
-    font-size: 15px;
-    height: 30px;
-    width: 50px;
-    margin-top: 10px;
-    margin-right: 90px;
-    margin-left: 60px;
-  }
-  
-  .upload-btn-wrapper input[type="file"] {
-    font-size: 100px;
-    position: absolute;
-    left: 0;
-    top: 0;
-    opacity: 0;
-  }
-  
-  .preview-video {
-    width: 1010px;
-    height: 300px;
-    border-radius: 0px;
-    margin-top: 10px;
-    margin-right: 60px;
-    margin-left: 60px;
-  }
+.flex-container {
+  display: flex;
+  flex-direction: row;
+}
 
-  .footer {
-    margin-left: 890px;
-  }
-  
-  /*responsive*/
-
+/* Responsive layout - makes a one column layout instead of a two-column layout */
+@media (max-width: 800px) {
   .flex-container {
-    display: flex;
-    flex-direction: row;
+    flex-direction: column;
   }
-  
-  /* Responsive layout - makes a one column layout instead of a two-column layout */
-  @media (max-width: 800px) {
-    .flex-container {
-      flex-direction: column;
-    }
-  }
-
-
-
+}
