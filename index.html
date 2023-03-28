@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="es">
-	
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -26,42 +25,71 @@
                         <li><i class="fa-solid fa-user-group"></i>   Estudiantes</li>
                         
                             <div class="profile">
-                                <button class="button1" style="font-size:20px"><i class="fa-solid fa-circle-user"></i>  Perfil de Usuario </button>
+                                <button class="button1" style="font-size:17px"><i class="fa-solid fa-circle-user"></i>   Perfil de Usuario</button>
                                 <button class="button2" type="button" value="Contacto">Contacto</button>
                                 <button class="button3" type="button" value="Idioma">Idioma</button>
                             </div>
                     </ul>
                 </nav>
 
-            <div class="information" >
-                
-                <input class="Titulo" id="form-control" type="text" required minlength="1" maxlength="140" placeholder="Titulo del Proyecto">
-                
+            <form action="" class="formulario" id="formulario">
+
+                    <div class="formulario__grupo" id="grupo__title">
+                        <div class="formulario__grupo-input">
+                            <input type="text" class="formulario__input" name="title" id="title" placeholder="Titulo del Proyecto">
+                            <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                        </div>
+                        <p class="formulario__input-error">El Titulo tiene que ser de 4 a 16 dígitos y solo puede contener numeros, letras y guion bajo.</p>
+                    </div>
+
                     <div class="upload-btn-wrapper col-lg-4 col-xl-4 mb-4">
-                        <button class="fas fa-link btn-upload"> </button>
+                        <!--button class="fas fa-link btn-upload"> </button-->
                         <video width="400" id="video{{$i}}" controls autoplay muted class="preview-video">
-                        <source src="" id="video_here">
-                        Your browser does not support HTML5 video.
+                            <source src="" id="video_here">
+                            Your browser does not support HTML5 video.
                         </video>
-                        <input type="file" name="video[]" id="video-input{{$i}}" onchange="loadfileVideo('video-input{{$i}}', 'video{{$i}}')" accept=".mp4, .mkv, .mov">
+                        <input type="file" name="video[]" id="video-input{{$i}}" onchange="loadfileVideo ('video-input{{$i}}', 'video{{$i}}')" accept=".mp4, .mkv, .mov">
                     </div>
 
-                <p>Descripción</p>
-                <input class="description" id="form-control" type="text" required minlength="1" maxlength="300" required>
-
-                <p>Lider del Proyecto</p>
-                <input id="form-control" type="name" required minlength="1" maxlength="50" required placeholder="Nombre Completo del Proyecto" required>
-                
-                <p>Correo Eletronico</p>
-                <input id="form-control" type="email" placeholder="Correo del Lider del Proyecto" required>
-                
-                    <div class="save">
-                        <input class="button" type="button" value="Guardar">
+                    <div class="formulario__grupo" id="grupo__description">
+                        <label for="description" class="formulario__label">Descripción</label>
+                        <div class="formulario__grupo-input">
+                            <input type="text" class="formulario__input" name="description" id="description" placeholder="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.">
+                            <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                        </div>
+                        <p class="formulario__input-error">La descripcion tiene que ser de 4 a 16 dígitos y solo puede contener numeros, letras y guion bajo.</p>
                     </div>
-            </div>
+                    
+                    <div class="formulario__grupo" id="grupo__lider">
+                        <label for="lider" class="formulario__label">Lider del Proyecto</label>
+                        <div class="formulario__grupo-input">
+                            <input type="text" class="formulario__input" name="lider" id="lider" placeholder="John Doe">
+                            <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                        </div>
+                        <p class="formulario__input-error">El Nombre del Lider de Proyecto tiene que ser de 4 a 16 dígitos y solo puede contener numeros, letras y guion bajo.</p>
+                    </div>
+    
+                    <div class="formulario__grupo" id="grupo__correo">
+                        <label for="correo" class="formulario__label">Correo Electrónico</label>
+                        <div class="formulario__grupo-input">
+                            <input type="email" class="formulario__input" name="correo" id="correo" placeholder="correo@correo.com">
+                            <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                        </div>
+                        <p class="formulario__input-error">El correo solo puede contener letras, numeros, puntos, guiones y guion bajo.</p>
+                    </div>
 
+                    <div class="formulario__mensaje" id="formulario__mensaje">
+                        <p><i class="fas fa-exclamation-triangle"></i> <b>Error:</b> Por favor rellena el formulario correctamente. </p>
+                     </div>
+            
+                    <div class="formulario__grupo formulario__grupo-btn-enviar">
+                        <button type="submit" class="formulario__btn">Guardar</button>
+                        <p class="formulario__mensaje-exito" id="formulario__mensaje-exito">Formulario enviado exitosamente!</p>
+                    </div>
+            </form>
 		</main>
 		<script src="./public/js/app.js"></script>
+        <script src="./public/js/formulario.js"></script>
 	</body>
 
 	<footer>
