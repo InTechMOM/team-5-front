@@ -10,288 +10,280 @@
 
 /*Menu izq*/
 
-img{
-  position: absolute;
-  width: 372px;
-  height: 200px;
-}
-
-.menu{
-  color:white;
-  line-height: 10px;
-  width: 372px;
-  height: 450px;
-  background-color: rgb(51, 72, 93); 
-  margin-top: 200px;
-}
-
-li{
-  display: block;
-  padding:20px 15px;
-  margin-left: 130px;
-  margin-right: 100px;
-  box-sizing:border-box;
-}
-
-.menu li:hover, .activado{
-  color:#13c9c9;
-  background: rgba(255,255,255,0.1);
-}
-
-/*boton perfil contacto y idioma*/
-
-.profile{
-  box-sizing:border-box;
-  background-color: rgb(51, 72, 93);
-  height: 70px;
-  position: static;
-  margin-top: 270px;
-}
-
-.profile button:hover, .activado{
-  color:#13c9c9;
-}
-
-.button1{
-  box-sizing: border-box;
-  position: absolute;
-  width: 372px;
-  height: 54px;
-  left: 0px;
-  top: 600px;
-  background: #34485D;
-  color: white;
-  } 
-
-.button2{
-  box-sizing: border-box;
-  position: absolute;
-  width: 191px;
-  height: 54px;
-  left: 0px;
-  top: 654px;
-  background: #508FCF;
-  color: white;
+  img{
+    position: absolute;
+    width: 372px;
+    height: 200px;
   }
 
-  .button3{
-  box-sizing: border-box;
-  position: absolute;
-  width: 191px;
-  height: 54px;
-  left: 180px;
-  top: 654px;
-  background: #508FCF;
-  color: white;
+  .menu{
+    color:white;
+    line-height: 10px;
+    width: 372px;
+    height: 450px;
+    background-color: rgb(51, 72, 93); 
+    margin-top: 200px;
+    position: static;
   }
+
+  .button1{
+    display: block;
+    box-sizing: border-box;
+    position: static;
+    background: #34485D;
+    color: white;
+    height: 50px;
+    border: 0px;
+  }
+
+  .menu .button1:focus, .activado{
+    color:#13c9c9;
+    background: rgba(255,255,255,0.1);
+  }
+
+    /*Menu izq -> boton perfil contacto y idioma*/
+
+    .profile{
+      box-sizing:border-box;
+      background-color: rgb(51, 72, 93);
+      height: 70px;
+      position: static;
+      margin-top: 270px;
+    }
+
+    .profile button:focus, .activado{
+      color:#13c9c9;
+    }
+
+    .button2{
+      box-sizing: border-box;
+      position: absolute;
+      width: 372px;
+      height: 54px;
+      left: 0px;
+      top: 600px;
+      background: #34485D;
+      color: white;
+      } 
+
+    .button3{
+      box-sizing: border-box;
+      position: absolute;
+      width: 191px;
+      height: 54px;
+      left: 0px;
+      top: 654px;
+      background: #508FCF;
+      color: white;
+      }
+
+      .button4{
+      box-sizing: border-box;
+      position: absolute;
+      width: 191px;
+      height: 54px;
+      left: 180px;
+      top: 654px;
+      background: #508FCF;
+      color: white;
+      }
 
   /*Descripcion*/
 
-p{
-  width: 650px;
-  margin-top: 10px;
-  margin-left: 60px;
-  font-weight: bold;
-}
-
-.description {
-  padding: 5px;
-}
-
-/*Descripcion Boton*/
-
-
-
-/*video*/
-
-.upload-btn-wrapper {
-  position: relative;
-  overflow: hidden;
-  display: inline-block;
-}
-
-.btn-upload {
-  background-color: white;
-  font-size: 15px;
-  height: 30px;
-  width: 50px;
-  margin-top: 10px;
-  margin-right: 90px;
-  margin-left: 60px;
-}
-
-.upload-btn-wrapper input[type="file"] {
-  font-size: 20px;
-  position: absolute;
-  left: 60px;
-  top: 20px;
-  opacity: 1;
-  
-}
-
-.preview-video {
-  width: 1010px;
-  height: 300px;
-  border-radius: 0px;
-  margin-top: 100px;
-  margin-right: 60px;
-  margin-left: 60px;
-  background: #D2EEE2;
-}
-
-/*formulario*/
-
-.formulario {
-	display: block;
-	grid-template-columns: 1fr 1fr;
-	gap: 20px;
-}
-
-.formulario__label {
-	display: block;
-	font-weight: 700;
-	padding: 1px;
-	cursor: pointer;
-  margin-left: 60px;
-  margin-top: 10px;
-}
-
-#title {
-  text-align: center;
-}
-
-.formulario__input {
-	background: #fff;
-	border: 2px solid ;
-	height: 25px;
-	line-height: 25px;
-	padding: 0 40px 0 30px;
-	transition: .3s ease all;
-  margin-top: 10px;
-  margin-right: 10px;
-  margin-left: 60px;
-  color: black;
-  width: 1000px;
-}
-
-.formulario__input:focus {
-	border: 3px solid #0075FF;
-	outline: none;
-	box-shadow: 3px 0px 30px rgba(163,163,163, 0.4);
-}
-
-/*.formulario__grupo button{
-	position: relative;
-  margin-top: 15px;
-  margin-left: 70px;
-  font-size: 17px;
-}*/
-
-.formulario__input-error {
-	font-size: 11px;
-	margin-bottom: 0;
-	display: none;
-}
-
-.formulario__input-error-activo {
-	display: block;
-}
-
-.formulario__validacion-estado {
-	position: absolute;
-	right: 15px;
-	bottom: 7px;
-	z-index: 100;
-	font-size: 16px;
-	opacity: 0;
-}
-
-.formulario__mensaje {
-	height: 45px;
-	line-height: 45px;
-	background: #F66060;
-	margin-left: 60px;
-  padding: 0px 10px;
-	border-radius: 3px;
-	display: none;
-  width: 1035px;
-}
-
-.formulario__mensaje-activo {
-	display: block;
-}
-
-.formulario__mensaje p {
-	margin: 0;
-}
-
-.formulario__grupo-btn-enviar {
-  margin-top: 10px;
-	display: block;
-}
-
-.formulario__btn {
-	background-color:  rgb(94, 175, 142);
-	color: #fff;
-	font-weight: bold;
-	border: none;
-	border-radius: 3px;
-	cursor: pointer;
-	transition: .1s ease all;
-  height: 45px;
-	line-height: 45px;
-	width: 130px;
-  margin-left: 1000px;
-}
-
-.formulario__btn:hover {
-	box-shadow: 3px 0px 30px rgba(163,163,163, 1);
-}
-
-.formulario__mensaje-exito {
-	font-size: 14px;
-	color: #119200;
-	display: none;
-}
-
-.formulario__mensaje-exito-activo {
-	display: block;
-}
-
-/* ----- -----  Estilos para Validacion ----- ----- */
-.formulario__grupo-correcto .formulario__validacion-estado {
-	color: #1ed12d;
-	opacity: 1;
-}
-
-.formulario__grupo-incorrecto .formulario__label {
-	color: #bb2929;
-}
-
-.formulario__grupo-incorrecto .formulario__validacion-estado {
-	color: #bb2929;
-	opacity: 1;
-}
-
-.formulario__grupo-incorrecto .formulario__input {
-	border: 3px solid #bb2929;
-}
-
-
-.footer {
-  margin-left: 890px;
-}
-
-/*responsive*/
-
-.flex-container {
-  display: flex;
-  flex-direction: row;
-}
-
-/* Responsive layout - makes a one column layout instead of a two-column layout */
-@media (max-width: 800px) {
-  .flex-container {
-    flex-direction: column;
+  p{
+    width: 650px;
+    margin-top: 10px;
+    margin-left: 60px;
+    font-weight: bold;
   }
-}
+
+  .description {
+    padding: 5px;
+  }
+
+  /*video*/
+
+  .upload-btn-wrapper {
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+  }
+
+  .btn-upload {
+    background-color: white;
+    font-size: 15px;
+    height: 30px;
+    width: 50px;
+    margin-top: 10px;
+    margin-right: 90px;
+    margin-left: 60px;
+  }
+
+  .upload-btn-wrapper input[type="file"] {
+    font-size: 20px;
+    position: absolute;
+    left: 60px;
+    top: 20px;
+    opacity: 1;
+    
+  }
+
+  .preview-video {
+    width: 1070px;
+    height: 300px;
+    border-radius: 0px;
+    margin-top: 60px;
+    margin-right: 60px;
+    margin-left: 60px;
+    background: #D2EEE2;
+  }
+
+  /*formulario*/
+
+  .formulario {
+    display: block;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+
+  .formulario__label {
+    display: block;
+    font-weight: 700;
+    padding: 1px;
+    cursor: pointer;
+    margin-left: 60px;
+    margin-top: 10px;
+  }
+
+  #title {
+    text-align: center;
+  }
+
+  .formulario__input {
+    background: #fff;
+    border: 2px solid ;
+    height: 25px;
+    line-height: 25px;
+    padding: 0 40px 0 30px;
+    transition: .3s ease all;
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-left: 60px;
+    color: black;
+    width: 1000px;
+  }
+
+  .formulario__input:focus {
+    border: 3px solid #0075FF;
+    outline: none;
+    box-shadow: 3px 0px 30px rgba(163,163,163, 0.4);
+  }
+
+  .formulario__input-error {
+    font-size: 11px;
+    margin-bottom: 0;
+    display: none;
+  }
+
+  .formulario__input-error-activo {
+    display: block;
+  }
+
+  .formulario__validacion-estado {
+    position: absolute;
+    right: 15px;
+    bottom: 7px;
+    z-index: 100;
+    font-size: 16px;
+    opacity: 0;
+  }
+
+  .formulario__mensaje {
+    height: 45px;
+    line-height: 45px;
+    background: #13c9c9;
+    margin-left: 60px;
+    padding: 0px 10px;
+    border-radius: 3px;
+    display: none;
+    width: 1035px;
+  }
+
+  .formulario__mensaje-activo {
+    display: block;
+  }
+
+  .formulario__mensaje p {
+    margin: 0;
+  }
+
+  .formulario__grupo-btn-enviar {
+    margin-top: 10px;
+    display: block;
+  }
+
+  .formulario__btn {
+    background-color:  rgb(94, 175, 142);
+    color: #fff;
+    font-weight: bold;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: .1s ease all;
+    height: 45px;
+    line-height: 45px;
+    width: 130px;
+    margin-left: 1000px;
+  }
+
+  .formulario__btn:hover {
+    box-shadow: 3px 0px 30px rgba(163,163,163, 1);
+  }
+
+  .formulario__mensaje-exito {
+    font-size: 14px;
+    color: #119200;
+    display: none;
+  }
+
+  .formulario__mensaje-exito-activo {
+    display: block;
+  }
+
+  /* ----- -----  Estilos para Validacion ----- ----- */
+  .formulario__grupo-correcto .formulario__validacion-estado {
+    color: #1ed12d;
+    opacity: 1;
+  }
+
+  .formulario__grupo-incorrecto .formulario__label {
+    color:  #13c9c9;
+  }
+
+  .formulario__grupo-incorrecto .formulario__validacion-estado {
+    color:  #13c9c9;
+    opacity: 1;
+  }
+
+  .formulario__grupo-incorrecto .formulario__input {
+    border: 3px solid #13c9c9;
+  }
+
+
+  .footer {
+    margin-left: 890px;
+  }
+
+  /*responsive*/
+
+  .flex-container {
+    display: flex;
+    flex-direction: row;
+  }
+
+  /* Responsive layout - makes a one column layout instead of a two-column layout */
+  @media (max-width: 800px) {
+    .flex-container {
+      flex-direction: column;
+    }
+  }
