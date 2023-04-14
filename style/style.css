@@ -19,11 +19,16 @@
   .menu{
     color:white;
     line-height: 10px;
-    width: 372px;
-    height: 450px;
-    background-color: rgb(51, 72, 93); 
+    /*width: 372px;
+    height: 450px;*/ 
     margin-top: 200px;
     position: static;
+    /*position: absolute;*/
+    width: 372px;
+    height: 709px;
+    left: 0px;
+    top: 0px;
+    background: #34485D;
   }
 
   .button1{
@@ -34,11 +39,13 @@
     color: white;
     height: 50px;
     border: 0px;
+    width: 372px;
+    height: 54px;
   }
 
   .menu .button1:focus, .activado{
     color:#13c9c9;
-    background: rgba(255,255,255,0.1);
+    background: #102132;
   }
 
     /*Menu izq -> boton perfil contacto y idioma*/
@@ -53,6 +60,7 @@
 
     .profile button:focus, .activado{
       color:#13c9c9;
+      background: #102132;
     }
 
     .button2{
@@ -61,7 +69,7 @@
       width: 372px;
       height: 54px;
       left: 0px;
-      top: 600px;
+      top: 800px;
       background: #34485D;
       color: white;
       } 
@@ -72,7 +80,7 @@
       width: 191px;
       height: 54px;
       left: 0px;
-      top: 654px;
+      top: 854px;
       background: #508FCF;
       color: white;
       }
@@ -83,7 +91,7 @@
       width: 191px;
       height: 54px;
       left: 180px;
-      top: 654px;
+      top: 854px;
       background: #508FCF;
       color: white;
       }
@@ -102,40 +110,50 @@
   }
 
   /*video*/
-
-  .upload-btn-wrapper {
-    position: relative;
-    overflow: hidden;
-    display: inline-block;
+  .form1 {
+    margin-bottom: 10px;
   }
-
-  .btn-upload {
-    background-color: white;
-    font-size: 15px;
-    height: 30px;
-    width: 50px;
+  
+  .youtube-link[type="text"] {
+    background: #fff;
+    border: 2px solid ;
+    height: 25px;
+    line-height: 25px;
+    padding: 0 40px 0 30px;
+    transition: .3s ease all;
     margin-top: 10px;
-    margin-right: 90px;
+    margin-right: 10px;
     margin-left: 60px;
-  }
-
-  .upload-btn-wrapper input[type="file"] {
-    font-size: 20px;
-    position: absolute;
-    left: 60px;
-    top: 20px;
-    opacity: 1;
+    color: black;
+    width: 1000px;
     
   }
+  
+  .button5 {
+    background: white;
+    color: black;
+    border: 0px;
+    position: absolute;
+    height: 21px;
+    left: 438px;
+    top: 80px;
+    cursor: pointer;
+  }
 
-  .preview-video {
+  .button5:hover {
+    background-color: #45a049;
+  }
+  
+  #video-container {
     width: 1070px;
-    height: 300px;
-    border-radius: 0px;
-    margin-top: 60px;
+    height: 319px;
     margin-right: 60px;
     margin-left: 60px;
     background: #D2EEE2;
+  }
+
+  iframe{
+    margin-left: 204px;
   }
 
   /*formulario*/
@@ -199,14 +217,14 @@
   }
 
   .formulario__mensaje {
-    height: 45px;
-    line-height: 45px;
+    height: 40px;
+    line-height: 40px;
     background: #13c9c9;
     margin-left: 60px;
     padding: 0px 10px;
     border-radius: 3px;
     display: none;
-    width: 1035px;
+    width: 1053px;
   }
 
   .formulario__mensaje-activo {
@@ -218,7 +236,6 @@
   }
 
   .formulario__grupo-btn-enviar {
-    margin-top: 10px;
     display: block;
   }
 
@@ -227,13 +244,13 @@
     color: #fff;
     font-weight: bold;
     border: none;
-    border-radius: 3px;
     cursor: pointer;
     transition: .1s ease all;
-    height: 45px;
-    line-height: 45px;
+    height: 35px;
+    line-height: 35px;
     width: 130px;
     margin-left: 1000px;
+    margin-top: 10px;
   }
 
   .formulario__btn:hover {
@@ -271,7 +288,7 @@
 
 
   .footer {
-    margin-left: 890px;
+    margin-left: 507px;
   }
 
   /*responsive*/
