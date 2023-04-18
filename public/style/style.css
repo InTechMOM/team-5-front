@@ -215,12 +215,11 @@
   }
 
   .formulario__validacion-estado {
-    position: absolute;
-    right: 15px;
-    bottom: 7px;
+    right: -450px;
     z-index: 100;
     font-size: 16px;
     opacity: 0;
+    top: 30px;
   }
 
   .formulario__mensaje {

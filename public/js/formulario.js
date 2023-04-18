@@ -2,8 +2,8 @@ const formulario = document.getElementById('formulario');
 const inputs = document.querySelectorAll('#formulario input');
 
 const expresiones = {
-    title: /^[a-zA-ZÀ-ÿ\s]{1,40}$/, // Letras y espacios, pueden llevar acentos.
-    description: /^[a-zA-ZÀ-ÿ\s]{1,40}$/, // Letras y espacios, pueden llevar acentos.
+    title: /^[a-zA-Z0-9\s\-\.\,\;\:\!\?]+$/, // Letras y espacios, pueden llevar acentos.
+    description: /^[a-zA-Z0-9\s\-\.\,\;\:\!\?]+$/, // Letras y espacios, pueden llevar acentos.
     lider: /^[a-zA-ZÀ-ÿ\s]{1,40}$/, // Letras y espacios, pueden llevar acentos.
 	correo: /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/,
 }
@@ -52,8 +52,6 @@ const validarCampo = (expresion, input, campo) => {
 		campos[campo] = false;
 	}
 }
-
-
 
 inputs.forEach((input) => {
 	input.addEventListener('keyup', validarFormulario);
