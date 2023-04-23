@@ -1,312 +1,307 @@
-*{
-  font-family: sans-serif;
-  padding: 0%;
-  margin: 0%;
+* {
+    font-family: sans-serif;
+    padding: 0;
+    margin: 0;
 }
 
-.container{
-  display: flex;
+.container {
+    display: flex;
+    position: relative;
+    width: 1440px;
+    height: 1024px;
 }
 
 /*Menu izq*/
 
-  img{
+img {
     position: absolute;
     width: 372px;
     height: 200px;
-  }
+}
 
-  .menu{
-    color:white;
+.menu {
+    color: white;
     line-height: 10px;
-    /*width: 372px;
-    height: 450px;*/ 
     margin-top: 200px;
     position: static;
-    /*position: absolute;*/
     width: 372px;
     height: 709px;
-    left: 0px;
-    top: 0px;
+    left: 0;
+    top: 0;
     background: #34485D;
-  }
+}
 
-  .button1{
+.button1 {
     display: block;
     box-sizing: border-box;
     position: static;
     background: #34485D;
     color: white;
     height: 50px;
-    border: 0px;
+    border: 0;
     width: 372px;
     height: 54px;
-  }
+    font-size:17px
+}
 
-  .menu .button1:focus, .activado{
-    color:#13c9c9;
+.menu .button1:focus,
+.activado {
+    color: #13c9c9;
     background: #102132;
-  }
+}
 
-    /*Menu izq -> boton perfil contacto y idioma*/
+/*Menu izq -> boton perfil contacto y idioma*/
 
-    .profile{
-      box-sizing:border-box;
-      background-color: rgb(51, 72, 93);
-      height: 70px;
-      position: static;
-      margin-top: 270px;
-    }
+.profile {
+    box-sizing: border-box;
+    background-color: rgb(51, 72, 93);
+    height: 70px;
+    position: static;
+    margin-top: 270px;
+}
 
-    .profile button:focus, .activado{
-      color:#13c9c9;
-      background: #102132;
-    }
+.profile button:focus,
+.activado {
+    color: #13c9c9;
+    background: #102132;
+}
 
-    .button2{
-      box-sizing: border-box;
-      position: absolute;
-      width: 372px;
-      height: 54px;
-      left: 0px;
-      top: 800px;
-      background: #34485D;
-      color: white;
-      } 
+.button2 {
+    box-sizing: border-box;
+    position: absolute;
+    width: 372px;
+    height: 54px;
+    left: 0;
+    top: 800px;
+    background: #34485D;
+    color: white;
+    font-size:17px
+}
 
-    .button3{
-      box-sizing: border-box;
-      position: absolute;
-      width: 191px;
-      height: 54px;
-      left: 0px;
-      top: 854px;
-      background: #508FCF;
-      color: white;
-      }
+.button3 {
+    box-sizing: border-box;
+    position: absolute;
+    width: 191px;
+    height: 54px;
+    left: 0;
+    top: 854px;
+    background: #508FCF;
+    color: white;
+    font-size:17px
+}
 
-      .button4{
-      box-sizing: border-box;
-      position: absolute;
-      width: 191px;
-      height: 54px;
-      left: 180px;
-      top: 854px;
-      background: #508FCF;
-      color: white;
-      }
+.button4 {
+    box-sizing: border-box;
+    position: absolute;
+    width: 191px;
+    height: 54px;
+    left: 180px;
+    top: 854px;
+    background: #508FCF;
+    color: white;
+    font-size:17px
+}
 
-  /*Descripcion*/
+/*Descripcion*/
 
-  p{
+p {
     width: 650px;
     margin-top: 10px;
     margin-left: 60px;
     font-weight: bold;
-  }
+}
 
-  .description {
+.description {
     padding: 5px;
-  }
+}
 
-  /*video*/
-  .form1 {
-    margin-bottom: 10px;
-  }
-  
-  .youtube-link[type="text"] {
-    background: #fff;
-    border: 2px solid ;
-    height: 25px;
-    line-height: 25px;
-    padding: 0 40px 0 30px;
-    transition: .3s ease all;
-    margin-top: 10px;
-    margin-right: 10px;
-    margin-left: 60px;
-    color: black;
-    width: 1000px;
-    
-  }
-  
-  .button5 {
+/*video*/
+
+.button5 {
     height: 21px;
     left: 438px;
     top: 80px;
     cursor: pointer;
-    background-color:  rgb(94, 175, 142);
+    background-color: rgb(94, 175, 142);
     color: #fff;
     font-weight: bold;
     border: none;
     cursor: pointer;
-    transition: .1s ease all;
+    transition: 0.1s ease all;
     height: 35px;
     line-height: 35px;
     width: 130px;
     margin-left: 1000px;
     margin-top: 10px;
-  }
+}
 
-  .button5:hover {
+.button5:hover {
     background-color: #45a049;
-  }
-  
-  #video-container {
+}
+
+#video-container {
     width: 1070px;
     height: 319px;
     margin-right: 60px;
     margin-left: 60px;
     background: #D2EEE2;
-  }
+    margin-top: 10px;
+}
 
-  iframe{
+iframe {
     margin-left: 204px;
-  }
+}
 
-  /*formulario*/
+/*formulario*/
 
-  .formulario {
+.formulario {
     display: block;
     grid-template-columns: 1fr 1fr;
     gap: 20px;
-  }
+}
 
-  .formulario__label {
+.formulario__label {
     display: block;
     font-weight: 700;
     padding: 1px;
     cursor: pointer;
     margin-left: 60px;
     margin-top: 10px;
-  }
+}
 
-  #title {
+#title {
     text-align: center;
-  }
+}
 
-  .formulario__input {
+.formulario__input {
     background: #fff;
-    border: 2px solid ;
+    border: 2px solid;
     height: 25px;
     line-height: 25px;
     padding: 0 40px 0 30px;
-    transition: .3s ease all;
+    transition: 0.3s ease all;
     margin-top: 10px;
     margin-right: 10px;
     margin-left: 60px;
     color: black;
     width: 1000px;
-  }
+}
 
-  .formulario__input:focus {
+.formulario__input:focus {
     border: 3px solid #0075FF;
     outline: none;
-    box-shadow: 3px 0px 30px rgba(163,163,163, 0.4);
-  }
+    box-shadow: 3px 0 30px rgba(163, 163, 163, 0.4);
+}
 
-  .formulario__input-error {
+.formulario__input-error {
     font-size: 11px;
     margin-bottom: 0;
     display: none;
-  }
+}
 
-  .formulario__input-error-activo {
+.formulario__input-error-activo {
     display: block;
-  }
+}
 
-  .formulario__validacion-estado {
+.formulario__validacion-estado {
     right: -450px;
     z-index: 100;
     font-size: 16px;
     opacity: 0;
     top: 30px;
-  }
+}
 
-  .formulario__mensaje {
+.formulario__mensaje {
     height: 40px;
     line-height: 40px;
     background: #13c9c9;
     margin-left: 60px;
-    padding: 0px 10px;
+    padding: 0 10px;
     border-radius: 3px;
     display: none;
     width: 1053px;
-  }
+}
 
-  .formulario__mensaje-activo {
+.formulario__mensaje-activo {
     display: block;
-  }
+}
 
-  .formulario__mensaje p {
+.formulario__mensaje p {
     margin: 0;
-  }
+}
 
-  .formulario__grupo-btn-enviar {
+.formulario__grupo-btn-enviar {
     display: block;
-  }
+}
 
-  .formulario__btn {
-    background-color:  rgb(94, 175, 142);
+.formulario__btn {
+    background-color: rgb(94, 175, 142);
     color: #fff;
     font-weight: bold;
     border: none;
     cursor: pointer;
-    transition: .1s ease all;
+    transition: 0.1s ease all;
     height: 35px;
     line-height: 35px;
     width: 130px;
     margin-left: 1000px;
     margin-top: 10px;
-  }
+}
 
-  .formulario__btn:hover {
-    box-shadow: 3px 0px 30px rgba(163,163,163, 1);
-  }
+.formulario__btn:hover {
+    box-shadow: 3px 0 30px rgba(163, 163, 163, 1);
+}
 
-  .formulario__mensaje-exito {
+.formulario__mensaje-exito {
     font-size: 14px;
     color: #119200;
     display: none;
-  }
+}
 
-  .formulario__mensaje-exito-activo {
+.formulario__mensaje-exito-activo {
     display: block;
-  }
+}
 
-  /* ----- -----  Estilos para Validacion ----- ----- */
-  .formulario__grupo-correcto .formulario__validacion-estado {
+/* ----- -----  Estilos para Validacion ----- ----- */
+.formulario__grupo-correcto .formulario__validacion-estado {
     color: #1ed12d;
     opacity: 1;
-  }
+}
 
-  .formulario__grupo-incorrecto .formulario__label {
-    color:  #c91313;
-  }
+.formulario__grupo-incorrecto .formulario__label {
+    color: #c91313;
+}
 
-  .formulario__grupo-incorrecto .formulario__validacion-estado {
-    color:  #c91313;
+.formulario__grupo-incorrecto .formulario__validacion-estado {
+    color: #c91313;
     opacity: 1;
-  }
+}
 
-  .formulario__grupo-incorrecto .formulario__input {
+.formulario__grupo-incorrecto .formulario__input {
     border: 3px solid #c91313;
-  }
+}
 
 
-  .footer {
+.footer {
     margin-left: 507px;
-  }
+}
 
-  /*responsive*/
+/*responsive*/
 
-  .flex-container {
-    display: flex;
-    flex-direction: row;
-  }
 
-  /* Responsive layout - makes a one column layout instead of a two-column layout */
-  @media (max-width: 800px) {
-    .flex-container {
-      flex-direction: column;
+@media screen and(max-width: 768px) {
+    .container {
+        padding: 0;
     }
-  }
+}
+
+@media screen and(max-width: 480px) {
+    body {
+        font-size: 14px;
+    }
+
+    .container {
+        max-width: 100%;
+        padding: 0;
+    }
+}

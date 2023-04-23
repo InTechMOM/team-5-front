@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <meta
+        name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- Custom CSS -->
+        <link
+        rel="stylesheet" href="../public/style/style.css">
+
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="../public/images/css/all.min.css">
+
+        <title>EdVisto</title>
+    </head>
+
+    <body>
+        <main class="container">
+            <img src="../public/images/EdVisto.png" alt="">
+            <nav>
+                <div class="menu">
+                    <button class="button1"><i class="fas fa-home"></i>   Inicio</button>
+                    <button class="button1"><i class="fa-solid fa-briefcase"></i>   Proyectos</button>
+                    <button class="button1"><i class="fa-solid fa-user-group"></i>   Estudiantes</button>
+                    <div class="profile">
+                        <button class="button2" type="button" value="perfil"><i class="fa-solid fa-circle-user"></i>   Perfil de Usuario</button>
+                        <button class="button3" type="button" value="contacto">Contacto</button>
+                        <button class="button4" type="button" value="idioma">Idioma</button>
+                    </div>
+                </div>
+            </nav>
+
+            <form class="formulario" id="formulario">
+
+                <div class="formulario__grupo" id="grupo__title">
+                    <div class="formulario__grupo-input">
+                        <input type="text" class="formulario__input" name="title" id="title" placeholder="Titulo del Proyecto">
+                        <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                    </div>
+                    <p class="formulario__input-error">El Titulo deberia tener de 1 a 90 dígitos y solo puede contener letras, numeros, espacios y caracteres.</p>
+                </div>
+
+                <div class="formulario__grupo" id="grupo__title">
+                    <div class="formulario__grupo-input">
+                        <label class="formulario__label" for="youtube-link">Link Video:</label>
+                        <input class="formulario__input" type="text" id="youtube-link" name="youtube-link" placeholder="Ingresa el enlace de YouTube">
+                        <i class="formulario__validacion-estado fas fa-times-circle"></i>             
+                    </div>
+                    <div id="video-container"></div>
+                    <button onclick="agregarVideo()" class="button5" type="button" id="play-button">Validar Video</button>
+                    <p class="formulario__input-error">El Titulo deberia tener de 1 a 90 dígitos y solo puede contener letras, numeros, espacios y caracteres.</p>
+                </div>
+
+                <div class="formulario__grupo" id="grupo__description">
+                    <label for="description" class="formulario__label">Descripción</label>
+                    <div class="formulario__grupo-input">
+                        <input type="text" class="formulario__input" name="description" id="description" placeholder="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.">
+                        <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                    </div>
+                    <p class="formulario__input-error">La descripcion deberia tener de 1 a 250 dígitos y solo puede contener numeros, letras y guion bajo.</p>
+                </div>
+
+                <div class="formulario__grupo" id="grupo__lider">
+                    <label for="lider" class="formulario__label">Lider del Proyecto</label>
+                    <div class="formulario__grupo-input">
+                        <input type="text" class="formulario__input" name="lider" id="lider" placeholder="John Doe">
+                        <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                    </div>
+                    <p class="formulario__input-error">El Nombre del Lider de Proyecto tiene que ser de 4 a 100 dígitos y solo puede contener letras</p>
+                </div>
+
+                <div class="formulario__grupo" id="grupo__correo">
+                    <label for="correo" class="formulario__label">Correo Electrónico</label>
+                    <div class="formulario__grupo-input">
+                        <input type="email" class="formulario__input" name="correo" id="correo" placeholder="correo@correo.com">
+                        <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                    </div>
+                    <p class="formulario__input-error">El correo solo puede contener letras, numeros, puntos, guiones y guion bajo.</p>
+                </div>
+
+                <div class="formulario__mensaje" id="formulario__mensaje">
+                    <p>
+                        <i class="fas fa-exclamation-triangle"></i>
+                        <b>Error:</b>
+                        Por favor rellena el formulario correctamente.
+                    </p>
+                </div>
+
+                <div class="formulario__grupo formulario__grupo-btn-enviar">
+                    <button type="submit" class="formulario__btn">Guardar</button>
+                    <p class="formulario__mensaje-exito" id="formulario__mensaje-exito">Formulario enviado exitosamente!</p>
+                </div>
+
+                <footer>
+                    <p class="footer">&copy; EdVisto 2024</p>
+                </footer>
+            </form>
+        </main>
+        <script src="../js/formulario.js"></script>
+        <script src="../js/video.js"></script>
+    </body>
+</html>

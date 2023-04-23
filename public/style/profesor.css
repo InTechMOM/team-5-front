@@ -1,0 +1,135 @@
+* {
+    font-family: sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    position: relative;
+    width: 1440px;
+    height: 1024px;
+}
+
+img {
+    position: absolute;
+    width: 372px;
+    height: 200px;
+}
+
+.menu {
+    color: white;
+    line-height: 10px;
+    margin-top: 200px;
+    position: static;
+    width: 372px;
+    height: 709px;
+    left: 0;
+    top: 0;
+    background: #34485D;
+}
+
+*Menu izq*/
+
+img {
+    position: absolute;
+    width: 372px;
+    height: 200px;
+}
+
+.menu {
+    color: white;
+    line-height: 10px;
+    margin-top: 200px;
+    position: static;
+    width: 372px;
+    height: 709px;
+    left: 0;
+    top: 0;
+    background: #34485D;
+}
+
+
+.button1 {
+    display: block;
+    box-sizing: border-box;
+    position: static;
+    background: #34485D;
+    color: white;
+    border: 0;
+    width: 372px;
+    height: 54px;
+    font-size:17px
+}
+
+.menu .button1:focus,
+.activado {
+    color: #13c9c9;
+    background: #102132;
+}
+
+
+/*Menu izq -> boton perfil contacto y idioma*/
+
+.profile {
+    box-sizing: border-box;
+    background-color: rgb(51, 72, 93);
+    height: 70px;
+    position: static;
+    margin-top: 270px;
+}
+
+.profile button:focus,
+.activado {
+    color: #13c9c9;
+    background: #102132;
+}
+
+.button2 {
+    box-sizing: border-box;
+    position: absolute;
+    width: 372px;
+    height: 54px;
+    left: 0;
+    top: 800px;
+    background: #34485D;
+    color: white;
+    font-size:17px
+}
+
+.button3 {
+    box-sizing: border-box;
+    position: absolute;
+    width: 191px;
+    height: 54px;
+    left: 0;
+    top: 854px;
+    background: #508FCF;
+    color: white;
+    font-size:17px
+}
+
+.button4 {
+    box-sizing: border-box;
+    position: absolute;
+    width: 191px;
+    height: 54px;
+    left: 180px;
+    top: 854px;
+    background: #508FCF;
+    color: white;
+    font-size:17px
+}
+
+/*Descripcion*/
+
+p {
+    width: 650px;
+    margin-top: 10px;
+    margin-left: 60px;
+    font-weight: bold;
+}
+
+.description {
+    padding: 5px;
+}
