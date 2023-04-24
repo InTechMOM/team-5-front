@@ -21,7 +21,7 @@ form.addEventListener('click', function(e) {
   }
 
   if (e.target === btnProfesor && correoValue !== "s@gmail.com") {
-    alert('Lo sentimos, el correo electrónico ingresado no corresponde a un perfil de Profesor.');
+    alert('Lo sentimos, el correo electrónico ingresado no corresponde a un perfil de Docente.');
     return;
   }
 
