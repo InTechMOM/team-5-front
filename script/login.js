@@ -3,6 +3,8 @@ const correo = document.querySelector('#correo');
 const btnProfesor = document.querySelector('#btn-profesor');
 const btnEstudiante = document.querySelector('#btn-estudiante');
 
+correo.focus();
+
 form.addEventListener('click', function(e) {
   e.preventDefault();
   const correoValue = correo.value;
@@ -14,7 +16,7 @@ form.addEventListener('click', function(e) {
   }
 
   // Redireccionar a la página correspondiente
-  if (e.target === btnProfesor) {
+  if (e.target === btnProfesor && correoValue === 'm@gmail.com') {
     window.location.href = './page/perfilprofesor.html';
   } else if (e.target === btnEstudiante) {
     window.location.href = './page/perfilEstudiante.html';

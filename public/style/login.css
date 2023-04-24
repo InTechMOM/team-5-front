@@ -13,6 +13,7 @@
 }
 
 form {
+    display: flex;
     position: absolute;
     width: 638px;
     height: 349px;
@@ -100,14 +101,17 @@ img {
 }
 
 /*responsive*/
-.flex-container {
-    display: flex;
-    flex-direction: row;
-}
-
-/* Responsive layout - makes a one column layout instead of a two-column layout */
-@media(max-width: 800px) {
-    .flex-container {
-        flex-direction: column;
+@media screen and (max-width: 600px) {
+    form {
+      max-width: 300px;
+      padding: 10px;
     }
-}
+    label, input {
+      font-size: 14px;
+    }
+    button {
+      font-size: 16px;
+      padding: 12px;
+    }
+  }
+
