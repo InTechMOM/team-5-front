@@ -15,11 +15,21 @@ form.addEventListener('click', function(e) {
     return;
   }
 
+  if (e.target === btnEstudiante && correoValue !== "m@gmail.com") {
+    alert('Lo sentimos, el correo electrónico ingresado no corresponde a un perfil de estudiante.');
+    return;
+  }
+
+  if (e.target === btnProfesor && correoValue !== "s@gmail.com") {
+    alert('Lo sentimos, el correo electrónico ingresado no corresponde a un perfil de Profesor.');
+    return;
+  }
+
   // Redireccionar a la página correspondiente
-  if (e.target === btnProfesor && correoValue === 'm@gmail.com') {
-    window.location.href = './page/perfilprofesor.html';
+  if (e.target === btnProfesor) {
+    window.location.href = 'page/perfilprofesor.html';
   } else if (e.target === btnEstudiante) {
-    window.location.href = './page/perfilEstudiante.html';
+    window.location.href = 'page/perfilEstudiante.html';
   }
 });
 

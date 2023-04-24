@@ -106,12 +106,20 @@ img {
       max-width: 300px;
       padding: 10px;
     }
+
     label, input {
       font-size: 14px;
     }
+
     button {
       font-size: 16px;
       padding: 12px;
     }
+
+    img{
+        width: 387px;
+        height: 148px;
+    }
+
   }
 
