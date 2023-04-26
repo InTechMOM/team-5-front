@@ -1,5 +1,5 @@
 * {
-    font-family: sans-serif;
+    font-family: 'Open Sans';
     margin: 0;
     box-sizing: border-box;
   }
@@ -27,7 +27,7 @@
   }
   
   img {
-    width: 100%;
+    width: 115%;
     max-width: 400px;
     height: auto;
     margin-bottom: 30px;
@@ -64,8 +64,7 @@
     line-height: 22px;
     border: none;
     transition: 0.1s ease all;
-    width: 100%;
-    max-width: 200px;
+    width: 48%;
     height: 40px;
     border-radius: 5px;
     margin-bottom: 10px;
