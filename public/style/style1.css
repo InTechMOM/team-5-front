@@ -1,133 +1,107 @@
-
 * {
     font-family: 'Open Sans';
-    margin: 0;
     box-sizing: border-box;
-    font-size: 18px;
-  }
-  
-  .container {
-      display: flex;
-      position: relative;
-      width: 100%;
-      height: 100%;
-    }
+    margin: 0;
+    font-size: 14px;
+}
 
-    /*Menu izq*/
-    
-    img {
-      display: flex;
-      position: relative;
-      width: 100%;
-      height: 22%; 
-    }
-    
-    .menu {
-      display: flex;
-      position: relative;
-      flex-direction: column;
-      background: #34485D;
-      font-weight: bold;
-      width: 100%;
-      height: 100%;
-      float: left; /* Alinea la columna del menú a la izquierda */
-    }
-    
-    .button1 {
-      background: #34485D;
-      color: white;
-      display: flex;
-      position: relative;
-      align-items: center;
-      border-radius: 5px;
-      border: 0;
-      width: 100%;
-      height: 8%;
-      padding-left: 35%;
-    }
-    
-    .menu .button1:focus,
-    .activado {
-      color: #13c9c9;
-      background: #102132;
-    }
-    
-    /*Menu izq -> boton perfil contacto y idioma*/
-    
-    .button2 {
-      background: #34485D;
-      color: white;
-      display: flex;
-      position: relative;
-      align-items: center;
-      border-radius: 5px;
-      margin-top: 100%;
-      width: 100%;
-      height: 8%;
-      padding-left: 29%;
-    }
-  
-    .button2:focus,
-    .activado {
-      color: #13c9c9;
-      background: #102132;
-    }
-  
-    .config{
-      display: flex;
-      position: relative;
-      font-weight: bold;
-      justify-content: center;
-    }
-    
-    .button3,
-    .button4 {
-      background: #508FCF;
-      color: white;
-      line-height: 22px;
-      width: 50%;
-      height: 198%;
-      border-radius: 5px;
-    }
-  
-    .button3:focus,
-    .activado 
-    {
-      color: #13c9c9;
-      background: #102132;
-    }
-    
-    .button4:focus,
-    .activado 
-    {
-      color: #13c9c9;
-      background: #102132;
-    }
-
-    /*formulario*/
-
-
-    /*video*/
-
-.button5 {
+.container {
     display: flex;
-    background-color: rgb(94, 175, 142);
-    color: #fff;
+    position: relative;
+    flex-wrap: nowrap;
+    width: 100%;
+    height: 100%;
+}
+
+/*Menu izq*/
+
+img {
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 22%;
+}
+
+.menu {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    background: #34485D;
     font-weight: bold;
-    border-radius: 5px;
-    border: none;
-    cursor: pointer;
-    transition: 0.1s ease all;
-    width: 14%;
-    height: 21%;
-    margin-left: 90%;
-    margin-top: 10px;
+    width: 100%;
+    height: 100%;
+    float: left; /* Alinea la columna del menú a la izquierda */
+}
+
+.button1 {
+    background: #34485D;
+    color: white;
+    display: flex;
+    position: relative;
+    align-items: center;
+    border: 0;
+    width: 100%;
+    height: 8%;
+    padding-left: 35%;
+}
+
+.menu .button1:focus,
+.activado {
+    color: #13c9c9;
+    background: #102132;
+}
+
+/*Menu izq -> boton perfil contacto y idioma*/
+
+.button2 {
+    background: #34485D;
+    color: white;
+    display: flex;
+    position: relative;
+    align-items: center;
+    margin-top: 100%;
+    width: 100%;
+    height: 8%;
+    padding-left: 29%;
+}
+
+.button2:focus,
+.activado {
+    color: #13c9c9;
+    background: #102132;
+}
+
+/*Menu izq -> boton contacto y idioma*/
+
+.config {
+    display: flex;
+    position: relative;
+    font-weight: bold;
     justify-content: center;
 }
 
-.button5:hover {
-    box-shadow: 3px 0 30px  #102132;
+.button3,
+.button4 {
+    background: #508FCF;
+    color: white;
+    line-height: 22px;
+    width: 50%;
+    height: 198%;
 }
+
+.button3:focus,
+.activado {
+    color: #13c9c9;
+    background: #102132;
+}
+
+.button4:focus,
+.activado {
+    color: #13c9c9;
+    background: #102132;
+}
+
+/*Menu Der -> video*/
 
 #video-container {
     width: 100%;
@@ -142,15 +116,16 @@ iframe {
     margin-left: 204px;
 }
 
-    
+/*Menu Der -> formulario*/
+
 .formulario {
     display: flex;
     flex-direction: column;
     align-items: stretch;
     position: relative;
     float: right; /* Alinea la columna del formulario a la derecha */
-    width: 75%; /* Define el ancho de la columna del formulario */
-    height: 100%;
+    width: 65%; /* Define el ancho de la columna del formulario */
+    height: 50%;
     padding-top: 1%;
 }
 
@@ -189,13 +164,12 @@ iframe {
 }
 
 .formulario__input-error {
-    font-size: 16px;
+    font-size: 13px;
     margin-bottom: 0;
     display: none;
     padding-left: 60px;
     color: red;
     font-weight: bold;
-
 }
 
 .formulario__input-error-activo {
@@ -204,9 +178,9 @@ iframe {
 
 .formulario__validacion-estado {
     position: relative;
-    margin-left:100%;
+    margin-left: 100%;
     z-index: 3;
-    top:-26px;
+    top: -26px;
     font-size: 15px;
     opacity: 0;
     padding-left: 2%
@@ -240,22 +214,26 @@ iframe {
 
 .formulario__btn {
     display: flex;
-    background-color: rgb(94, 175, 142);
+    font-family: 'Open Sans';
+    background: #5CAE8C;
     color: #fff;
     font-weight: bold;
+    font-size: 15px;
+    line-height: 22px;
     transition: 0.1s ease all;
     border-radius: 5px;
     border: none;
-    cursor: pointer;
-    width: 10%;
-    height: 21%;
-    margin-left: 94%;
+    width: 30%;
+    height: 40px;
+    margin-left: 76%;
     margin-top: 3%;
     justify-content: center;
+    align-items: center;
 }
 
 .formulario__btn:hover {
-    box-shadow: 3px 0 30px  #102132;
+    cursor: pointer;
+    box-shadow: 3px 0 30px #102132;
 }
 
 
@@ -290,8 +268,8 @@ iframe {
     border: 3px solid #c91313;
 }
 
-
 .footer {
-    margin-left: 100%;
-    align-items: center;
+    text-align: center;
+    color: black;
+    font-weight: bold;
 }
