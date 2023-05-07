@@ -24,10 +24,9 @@
             </nav>
 
             <form class="formulario" id="formulario">        
-                    <label>PROYECTOS</label>
+                    <label class="titulo">PROYECTOS</label>
 
                     <div class="filtro">
-                        <label for="filtro_proyectos">Filtrar por proyectos</label>
                         <select id="filtro_proyectos">
                             <option value="todos">Todos</option>
                             <option value="proyecto1">Proyecto 1</option>
@@ -37,30 +36,38 @@
                         </select>
                     </div>
                     
-                    <div class="contenedor">
-                        <div>
-                            <label>EL SOL</label>
-                                <div class="caja caja1 proyecto1">
-                                    <h2>Caja 1</h2>
-                                    <p>Contenido de la caja 1.</p>
-                                </div>
-                                <div class="caja caja2 proyecto2">
-                                    <h2>Caja 2</h2>
-                                    <p>Contenido de la caja 2.</p>
-                                </div>
+                    <div class="container1">
+                        
+                        <label>EL SOL</label>
+                        <div class="box">
+                            <div id="video-container">
+                                <img class="imagen-video" src="../public/images/Vector.jpg">
+                            </div>
+                            <div class="sub-box">
+                                <p>Proyecto: El sol</p>
+                                <p>Materia: Ciencias </p> 
+                                <p>Lider: Laura Lee </p> 
+                                <p>Descripción:</p>   
+                                
+                            </div>
                         </div>
+
                         <button type="submit" class="formulario__btn">Evaluación</button>
-                        <div>      
-                            <label>EL ATOMO</label>                  
-                            <div class="caja caja3 proyecto3">
-                                <h2>Caja 3</h2>
-                                <p>Contenido de la caja 3.</p>
+                        
+                        <label>EL ATOMO</label> 
+                        <div class="box">      
+                            <div id="video-container">
+                                <img class="imagen-video" src="../public/images/Vector.jpg">
                             </div>
-                            <div class="caja caja4 proyecto4">
-                                <h2>Caja 4</h2>
-                                <p>Contenido de la caja 4.</p>
+                            <div class="sub-box">
+                                <p>Proyecto: El átomo</p>
+                                <p>Materia: Ciencias</p> 
+                                <p>Lider: Laura Lee</p> 
+                                <p>Descripción:</p>   
+                                
                             </div>
                         </div>
+                        
                         <button type="submit" class="formulario__btn">Evaluación</button>
 
                     </div>
