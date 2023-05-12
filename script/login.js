@@ -11,17 +11,18 @@ form.addEventListener('click', function(e) {
 
   // Validar correo electrónico
   if (!isValidEmail(correoValue)) {
-    alert('Por favor, ingrese un correo electrónico válido.');
+    //alert('Por favor, ingrese un correo electrónico válido.'); //
+    Swal.fire('Por favor, ingrese un correo electrónico válido.')
     return;
   }
 
   if (e.target === btnEstudiante && correoValue !== "m@gmail.com") {
-    alert('Lo sentimos, el correo electrónico ingresado no corresponde a un perfil de Estudiante.');
+    Swal.fire('Lo sentimos, el correo electrónico ingresado no corresponde a un perfil de Estudiante.');
     return;
   }
 
   if (e.target === btnDocente && correoValue !== "s@gmail.com") {
-    alert('Lo sentimos, el correo electrónico ingresado no corresponde a un perfil de Docente.');
+    Swal.fire('Lo sentimos, el correo electrónico ingresado no corresponde a un perfil de Docente.');
     return;
   }
 

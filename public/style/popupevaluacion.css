@@ -1,0 +1,76 @@
+* {
+    font-family: 'Open Sans';
+    box-sizing: border-box;
+    margin: 0;
+    font-size: 14px;
+    background-color: rgba(210, 238, 226, 1);
+  }
+  
+  label {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+
+  .menu {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+.PensamientoCritico,
+.Creatividad,
+.Colaboración,
+.Comunicación {
+  display: flex;
+}
+
+.PensamientoCritico li,
+    .Creatividad li,
+    .Colaboración li,
+    .Comunicación li {
+      display: inline-block;
+      margin-right: 10px;
+    }
+
+    
+    .PensamientoCritico input[type="checkbox"]:not(:hover) + label,
+    .Creatividad input[type="checkbox"]:not(:hover) + label,
+    .Colaboración input[type="checkbox"]:not(:hover) + label,
+    .Comunicación input[type="checkbox"]:not(:hover) + label {
+      opacity: 0;
+    }
+
+    .PensamientoCritico input[type="checkbox"]:hover + label,
+  .Creatividad input[type="checkbox"]:hover + label,
+  .Colaboración input[type="checkbox"]:hover + label,
+  .Comunicación input[type="checkbox"]:hover + label {
+    opacity: 1;
+  }
+
+.Lista1,
+.Lista2,
+.Lista3,
+.Lista4 {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+}
+
+.Lista1 li,
+.Lista2 li,
+.Lista3 li,
+.Lista4 li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+
+

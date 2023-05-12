@@ -1,14 +1,15 @@
-const filtro = document.getElementById('filtro_proyectos');
-const proyectos = document.querySelectorAll('.caja');
-
-filtro.addEventListener('change', () => {
-    const valorFiltro = filtro.value;
-
-    proyectos.forEach((proyecto) => {
-        if (proyecto.classList.contains(valorFiltro) || valorFiltro === 'todos') {
-            proyecto.style.display = 'block';
-        } else {
-            proyecto.style.display = 'none';
-        }
-    });
+document.getElementById('filtro_proyectos').addEventListener('change', function() {
+  var seleccionado = this.value;
+  var proyectos = document.querySelectorAll('.box');
+  
+  for (var i = 0; i < proyectos.length; i++) {
+      var proyecto = proyectos[i];
+      var proyectoData = proyecto.getAttribute('data-proyecto');
+      
+      if (seleccionado === 'todos' || seleccionado === proyectoData) {
+          proyecto.classList.remove('hidden');
+      } else {
+          proyecto.classList.add('hidden');
+      }
+  }
 });

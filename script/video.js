@@ -22,6 +22,6 @@ function agregarVideo() {
     container.appendChild(iframe);
   } else {
     // Si el enlace no es válido, mostramos un mensaje de error
-    alert('Por favor, ingresa un enlace de YouTube válido');
+    Swal.fire('Por favor, ingresa un enlace de YouTube válido');
   }
 }

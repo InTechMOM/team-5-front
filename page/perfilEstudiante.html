@@ -3,8 +3,12 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="../public/style/style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;800&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="../public/style/estudiante.css">
         <link rel="stylesheet" href="../public/images/css/all.min.css">
+        <link rel="stylesheet" href="sweetalert2.min.css">
         <title>Estudiante</title>
     </head>
 
@@ -13,7 +17,7 @@
             
             <nav>
                 <div class="menu">
-                    <img class="imgen-logo" src="../public/images/EdVisto.png" alt="Logotipo de EdVisto">
+                    <img class="imgen-logo" src="../public/images/logo.png" alt="Logotipo de EdVisto">
                     <button class="button1"><i class="fas fa-home"></i>Inicio</button>
                     <button class="button1"><i class="fa-solid fa-briefcase"></i>Proyectos</button>
                     <button class="button1"><i class="fa-solid fa-user-group"></i>Estudiantes</button>
@@ -88,14 +92,14 @@
                     <p class="formulario__mensaje-exito" id="formulario__mensaje-exito">Formulario enviado exitosamente!</p>
                 </div>
 
-                <footer>
-                    <p class="footer">&copy; EdVisto 2024</p>
-                </footer>
+               
             </form>
-            
+            <!--footer>
+                <p class="footer">&copy; EdVisto 2024</p>
+            </footer-->
         </main>
-        
         <script src="../script/formulario.js"></script>
         <script src="../script/video.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     </body>
 </html>
