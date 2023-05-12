@@ -40,12 +40,12 @@
                 </div>
 
                 <div class="formulario__grupo" id="grupo__video">
+                    <label class="formulario__label" for="youtube-link">Link Video:</label>
                     <div class="formulario__grupo-input">
-                        <label class="formulario__label" for="youtube-link">Link Video:</label>
                         <input class="formulario__input" type="text" id="youtube-link" name="youtube-link" placeholder="Ingresa el enlace de YouTube">
                         <i class="formulario__validacion-estado fas fa-times-circle"></i>             
                     </div>
-                    <!--p class="formulario__input-error">El Titulo deberia tener de 1 a 90 dígitos y solo puede contener letras, numeros, espacios y caracteres.</p-->
+                    <p class="formulario__input-error">El link de YouTube no deberia estar vacio.</p>
                     <div id="video-container">
                         <img class="imagen-video" src="../public/images/Vector.jpg">
                     </div>
@@ -55,7 +55,7 @@
                 <div class="formulario__grupo" id="grupo__description">
                     <label for="description" class="formulario__label">Descripción</label>
                     <div class="formulario__grupo-input">
-                        <input type="text" class="formulario__input" name="description" id="description" placeholder="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." maxlength="249">
+                        <input class="formulario__input" type="text" id="description" name="description" placeholder="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." maxlength="249">
                         <i class="formulario__validacion-estado fas fa-times-circle"></i>
                     </div>
                     <p class="formulario__input-error">La descripción debe tener de 1 a 250 dígitos y solo puede contener números, letras y guion bajo.</p>

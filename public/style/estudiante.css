@@ -115,7 +115,12 @@
 }
 
 iframe {
-    margin-left: 204px;
+    display: flex;
+    position: relative;
+    align-items: center;
+    margin-left: 16%;
+    width: 70%;
+    height: 100%;
 }
 
 .imagen-video{
