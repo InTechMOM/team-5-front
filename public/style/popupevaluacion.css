@@ -1,76 +1,91 @@
 * {
-    font-family: 'Open Sans';
-    box-sizing: border-box;
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
     font-size: 14px;
     background-color: rgba(210, 238, 226, 1);
-  }
-  
-  label {
-    display: flex;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
+}
+
+label {
     font-weight: bold;
-  }
-  
-  ul {
+    text-align: center;
+    margin: 2% 0;
+}
+
+ul {
     list-style-type: none;
     padding: 0;
-  }
+}
 
-  .menu {
+.menu, .PensamientoCritico, .Creatividad, .Colaboración, .Comunicación {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 2%;
+    padding: 1%;
+}
+
+.PensamientoCritico li, .Creatividad li, .Colaboración li, .Comunicación li {
+    display: flex;
+    align-items: center;
+}
+
+.Lista1, .Lista2, .Lista3, .Lista4 {
+    display: flex;
     flex-wrap: wrap;
-  }
-
-.PensamientoCritico,
-.Creatividad,
-.Colaboración,
-.Comunicación {
-  display: flex;
 }
 
-.PensamientoCritico li,
-    .Creatividad li,
-    .Colaboración li,
-    .Comunicación li {
-      display: inline-block;
-      margin-right: 10px;
-    }
+.Lista1 li, .Lista2 li, .Lista3 li, .Lista4 li {
+    display: flex;
+    align-items: center;
+}
 
-    
-    .PensamientoCritico input[type="checkbox"]:not(:hover) + label,
-    .Creatividad input[type="checkbox"]:not(:hover) + label,
-    .Colaboración input[type="checkbox"]:not(:hover) + label,
-    .Comunicación input[type="checkbox"]:not(:hover) + label {
-      opacity: 0;
-    }
+input[type="radio"], input[type="checkbox"] {
+    cursor: pointer;
+    appearance: auto;
+    border-radius: 50%;
+    padding: initial;
+    border: initial;
+}
 
-    .PensamientoCritico input[type="checkbox"]:hover + label,
-  .Creatividad input[type="checkbox"]:hover + label,
-  .Colaboración input[type="checkbox"]:hover + label,
-  .Comunicación input[type="checkbox"]:hover + label {
+p {
+    font-size: 12px;
+    font-weight: bold;
+}
+
+input[type="checkbox"] + p {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+input[type="checkbox"]:hover + p, input[type="checkbox"]:focus + p {
     opacity: 1;
-  }
-
-.Lista1,
-.Lista2,
-.Lista3,
-.Lista4 {
-  display: flex;
-  flex-direction: row;
-  position: relative;
 }
 
-.Lista1 li,
-.Lista2 li,
-.Lista3 li,
-.Lista4 li {
-  display: inline-block;
-  margin-right: 10px;
+.formulario__btn {
+    display: flex;
+    font-family: 'Open Sans', sans-serif;
+    background: #5CAE8C;
+    color: #fff;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 22px;
+    transition: 0.1s ease all;
+    border-radius: 5px;
+    border: none;
+    width: 14%;
+    height: 40px;
+    margin-left: 50%;
+    margin-top: 1%;
+    justify-content: center;
+    align-items: center;
 }
 
-
-
+.formulario__btn:hover {
+    cursor: pointer;
+    box-shadow: 3px 0 30px #102132;
+}

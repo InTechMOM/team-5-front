@@ -106,8 +106,8 @@ img {
     flex-direction: column;
     align-items: stretch;
     position: relative;
-    justify-content: flex-end; /* Alinea la columna del formulario a la derecha */
-    width: 79%; /* Define el ancho de la columna del formulario */
+    justify-content: flex-start;
+    width: 79%;
     padding-top: 1%;
 }
 
@@ -121,6 +121,7 @@ img {
   color: #000000;
   text-align: center;
   padding-left: 5%;
+  margin-top: 1%;
 }
 
 
@@ -130,19 +131,13 @@ img {
 
 .container1 {
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-    height: 100%;
-    flex-wrap: wrap;
+    flex-direction: column;
+    height: 49%;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
 }
 
-.container1 .box:nth-child(n+3) {
-    display: none;
-}
-
-.container1 .box[data-proyecto="proyecto3"] {
-    display: flex;
-}
 .label-container {
   display: flex;
   justify-content: center;
@@ -154,6 +149,17 @@ img {
   text-align: center;
 }
 
+.label-containerCargar {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    font-weight: 800;
+    font-size: 24px;
+    color: #000000;
+    text-align: center;
+  }
+
 .hidden {
   display: none;
 }
@@ -164,7 +170,7 @@ img {
     position: relative;
     background-color: #FFFFFF;
     width: 100%;
-    height: 34%;
+    height: 10%;
     padding-left: 5%;
     flex-wrap: wrap;
 }
@@ -206,17 +212,36 @@ img {
     transition: 0.1s ease all;
     border-radius: 5px;
     border: none;
-    width: 14%; /* Ajusta el ancho según tus necesidades */
-    height: 15%;
-    margin-left: auto; /* Ajusta el margen según tus necesidades */
+    width: 14%;
+    height: 51%;
+    margin-left: auto;
     margin-right: 7.5%;
     margin-top: 0%;
 }
 
-.formulario__btn:hover {
+.formulario__btnCargar {
+    font-family: 'Open Sans';
+    background: #5CAE8C;
+    color: #fff;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 22px;
+    transition: 0.1s ease all;
+    border-radius: 5px;
+    border: none;
+    width: 14%;
+    height: 5%;
+    margin-left: 5%;
+    margin-right: auto;
+    margin-top: 2%
+}
+
+.formulario__btn:hover,
+.formulario__btnCargar:hover{
     cursor: pointer;
     box-shadow: 3px 0 30px #102132;
 }
+
 
 .hidden {
     display: none;
@@ -224,23 +249,6 @@ img {
 
 /*video*/
 
-#video-container {
-    width: 75%;
-    background: #D2EEE2;
-    border-radius: 5px;
-    margin: 5px;
-}
-
-.img,
-.imagen-video {
-    display: flex;
-    position: relative;
-    width: 5%;
-    height: 24%;
-    left: 50%;
-    top: 45%;
-    background: #D2EEE2;
-}
 
 .footer {
     text-align: center;

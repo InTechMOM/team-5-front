@@ -1,7 +1,11 @@
 * {
+    margin: 0%;
+    padding: 0%;
+}
+
+body{
     font-family: 'Open Sans';
     box-sizing: border-box;
-    margin: 0;
     font-size: 14px;
 }
 
@@ -9,10 +13,7 @@
     display: flex;
     position: relative;
     flex-wrap: nowrap;
-    width: 100%;
-    height: 100%;
-    min-height: 97vh;
-   /* max-height: 100vh;*/
+    min-height: 96vh;
 }
 
 /*Menu izq*/
@@ -107,11 +108,13 @@
 /*Menu Der -> video*/
 
 #video-container {
-    width: 100%;
+    width: 105.5%;
     height: 319px;
-    margin-right: 60px;
-    margin-left: 60px;
+    margin-right: 5%;
+    margin-left: 5%;
     background: #D2EEE2;
+    border-radius: 5px;
+    margin-top: 1%;
 }
 
 iframe {
@@ -139,7 +142,7 @@ iframe {
     align-items: stretch;
     position: relative;
     float: right; /* Alinea la columna del formulario a la derecha */
-    width: 74%; /* Define el ancho de la columna del formulario */
+    width: 70.5%; /* Define el ancho de la columna del formulario */
     height: 100%;
     padding-top: 1%;
 }
@@ -166,7 +169,8 @@ iframe {
     padding: 0 40px 0 30px;
     transition: 0.3s ease all;
     margin-top: 10px;
-    margin-left: 60px;
+    margin-right: 5%;
+    margin-left: 5%;
     width: 100%;
 }
 
@@ -192,10 +196,10 @@ iframe {
     position: relative;
     margin-left: 100%;
     z-index: 3;
-    top: -21px;
-    font-size: 12px;
+    top: -23px;
+    font-size: 15px;
     opacity: 0;
-    padding-left: 3%
+    padding-left: 8%;
 }
 
 .formulario__mensaje {
@@ -238,8 +242,8 @@ iframe {
     border: none;
     width: 14%;
     height: 40px;
-    margin-left: 90%;
-    margin-top: 2%;
+    margin-left: 96.5%;
+    margin-top: 1%;
     justify-content: center;
     align-items: center;
 }

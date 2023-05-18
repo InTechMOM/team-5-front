@@ -30,7 +30,7 @@ form.addEventListener('click', function(e) {
   if (e.target === btnDocente) {
     window.location.href = 'page/perfilDocente.html';
   } else if (e.target === btnEstudiante) {
-    window.location.href = 'page/perfilEstudiante.html';
+    window.location.href = 'page/proyectos.html';
   }
 });
 

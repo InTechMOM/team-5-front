@@ -9,5 +9,5 @@
     // Función para abrir la ventana emergente
     function abrirPopup() {
         // Abre la ventana emergente con el contenido deseado
-        window.open("popupevaluacion.html", "popup", "width=1100,height=180");
+        window.open("popupEvaluacion.html", "popup", "width=500,height=750");
     }

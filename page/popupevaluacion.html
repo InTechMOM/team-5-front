@@ -4,6 +4,9 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;800&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="../public/style/popupevaluacion.css">
         <title>Evaluación</title>
     </head>
@@ -14,11 +17,11 @@
                 <div class="PensamientoCritico">
                     <label>Pensamiento Critico</label>
                     <div class="Lista1">
-                        <ul>
-                            <li><input type="checkbox" name="condiciones" value="1"/><label>Evaluación de la validez de la información</label></li>
-                            <li><input type="checkbox" name="condiciones" value="2"/><label>Análisis argumental</label></li>
-                            <li><input type="checkbox" name="condiciones" value="3"/><label>Razón y contraargumento</label></li>
-                            <li><input type="checkbox" name="condiciones" value="4"/><label>Conclusión</label></li>
+                        <ul id="lista1">
+                            <li><input type="checkbox" name="condiciones" value="1"/><p>Evaluación de la validez de la información</p></li>
+                            <li><input type="checkbox" name="condiciones" value="2"/><p>Análisis argumental</p></li>
+                            <li><input type="checkbox" name="condiciones" value="3"/><p>Razón y contraargumento</p></li>
+                            <li><input type="checkbox" name="condiciones" value="4"/><p>Conclusión</p></li>
                         </ul>
                     </div>
                 </div>
@@ -26,14 +29,14 @@
                 <div class="Creatividad">
                     <label>Creatividad</label>
                     <div class="Lista2">
-                        <ul>
-                            <li><input type="checkbox" name="condiciones" value="1"/><label>Fluidez</label></li>
-                            <li><input type="checkbox" name="condiciones" value="2"/><label>La flexibilidad</label></li>
-                            <li><input type="checkbox" name="condiciones" value="3"/><label>La elaboración</label></li>
-                            <li><input type="checkbox" name="condiciones" value="4"/><label>La originalidad</label></li>
-                            <li><input type="checkbox" name="condiciones" value="5"/><label>La solución de problemas</label></li>
-                            <li><input type="checkbox" name="condiciones" value="6"/><label>La autodeterminación</label></li>
-                            <li><input type="checkbox" name="condiciones" value="7"/><label>Adaptación</label></li>
+                        <ul id="lista2">
+                            <li><input type="checkbox" name="condiciones" value="1"/><p>Fluidez</p></li>
+                            <li><input type="checkbox" name="condiciones" value="2"/><p>La flexibilidad</p></li>
+                            <li><input type="checkbox" name="condiciones" value="3"/><p>La elaboración</p></li>
+                            <li><input type="checkbox" name="condiciones" value="4"/><p>La originalidad</p></li>
+                            <li><input type="checkbox" name="condiciones" value="5"/><p>La solución de problemas</p></li>
+                            <li><input type="checkbox" name="condiciones" value="6"/><p>La autodeterminación</p></li>
+                            <li><input type="checkbox" name="condiciones" value="7"/><p>Adaptación</p></li>
                         </ul>
                     </div>
                 </div>
@@ -41,10 +44,12 @@
                 <div class="Colaboración">
                     <label>Colaboración</label>
                     <div class="Lista3">
-                        <ul>
-                            <li><input type="checkbox" name="condiciones" value="1"/><label>La capacidad de planificar y tomar decisiones en grupo</label></li>
-                            <li><input type="checkbox" name="condiciones" value="2"/><label>La capacidad de comunicar ideas, comprender diferentes perspectivas y elaborar el trabajo de otro miembro del equipo</label></li>
-                            <li><input type="checkbox" name="condiciones" value="3"/><label>La capacidad de aportar recursos e ideas</label></li>
+                        <ul id="lista3">
+                            <li><input type="checkbox" name="condiciones" value="1"/><p>La capacidad de planificar y tomar decisiones en grupo</p></li>
+                            <li><input type="checkbox" name="condiciones" value="2"/><p>La capacidad de comunicar ideas</p></li>
+                            <li><input type="checkbox" name="condiciones" value="3"/><p>La capacidad de comprender diferentes perspectivas</p></li>
+                            <li><input type="checkbox" name="condiciones" value="4"/><p>La capacidad de elaborar el trabajo de otro miembro del equipo</p></li>
+                            <li><input type="checkbox" name="condiciones" value="5"/><p>La capacidad de aportar recursos e ideas</p></li>
                         </ul>
                     </div>
                 </div>
@@ -52,14 +57,18 @@
                 <div class="Comunicación">
                     <label>Comunicación</label>
                     <div class="Lista4">
-                        <ul>
-                            <li><input type="checkbox" name="condiciones" value="1"/><label>Comunicación verbal</label></li>
-                            <li><input type="checkbox" name="condiciones" value="2"/><label>Comunicación no verbal</label></li>
-                            <li><input type="checkbox" name="condiciones" value="3"/><label>Comunicacion escrita</label></li>
+                        <ul id="lista4">
+                            <li><input type="checkbox" name="condiciones" value="1"/><p>Comunicación verbal</p></li>
+                            <li><input type="checkbox" name="condiciones" value="2"/><p>Comunicación no verbal</p></li>
+                            <li><input type="checkbox" name="condiciones" value="3"/><p>Comunicacion escrita</p></li>
                         </ul>
                     </div>
                 </div>
             </div>
+            <button type="submit" class="formulario__btn">Guardar</button>
         </main>
+        <script src="../script/grafico.js"></script>
+        <script src="../script/Guardar.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     </body>
 </html>

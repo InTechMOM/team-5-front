@@ -104,3 +104,22 @@ function agregarVideo() {
 	  Swal.fire('Por favor, ingresa un enlace de YouTube válido');
 	}
   }
+
+  formulario.addEventListener('submit', (e) => {
+    e.preventDefault();
+
+    if (campos.title && campos.description && campos.lider && campos.correo) {
+        formulario.reset();
+        document.getElementById('formulario__mensaje-exito').classList.add('formulario__mensaje-exito-activo');
+        setTimeout(() => {
+            document.getElementById('formulario__mensaje-exito').classList.remove('formulario__mensaje-exito-activo');
+            // Redireccionar a la pantalla anterior
+            window.location.href = 'proyectos.html';
+        }, 2000);
+        document.querySelectorAll('.formulario__grupo-correcto').forEach((icono) => {
+            icono.classList.remove('formulario__grupo-correcto');
+        });
+    } else {
+        document.getElementById('formulario__mensaje').classList.add('formulario__mensaje-activo');
+    }
+});
