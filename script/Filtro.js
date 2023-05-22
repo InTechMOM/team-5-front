@@ -1,53 +1,77 @@
-document.getElementById('filtro_proyectos').addEventListener('change', function() {
-  var seleccionado = this.value;
-  var proyectos = document.querySelectorAll('.box');
-  
-  for (var i = 0; i < proyectos.length; i++) {
-      var proyecto = proyectos[i];
-      var proyectoData = proyecto.getAttribute('data-proyecto');
-      
-      if (seleccionado === 'todos' || seleccionado === proyectoData) {
-          proyecto.classList.remove('hidden');
-      } else {
-          proyecto.classList.add('hidden');
-      }
-  }
-});
-
-// Obtener los elementos relevantes
+// Obtener todos los elementos de proyecto
 const proyectos = document.querySelectorAll('.box');
-const filtroTodos = document.getElementById('filtro-todos');
-const filtroProyecto1 = document.getElementById('filtro-proyecto1');
-const filtroProyecto2 = document.getElementById('filtro-proyecto2');
-const filtroProyecto3 = document.getElementById('filtro-proyecto3');
-// Agrega más filtros si es necesario
 
-// Función para mostrar proyectos filtrados
-function mostrarProyectos(filtro) {
-    // Ocultar todos los proyectos
-    proyectos.forEach(proyecto => {
-        proyecto.classList.remove('mostrar');
-    });
-
-    // Mostrar proyectos según el filtro seleccionado
-    if (filtro === 'todos') {
-        // Mostrar solo dos proyectos
-        for (let i = 0; i < 2; i++) {
-            proyectos[i].classList.add('mostrar');
+// Función para mostrar solo el proyecto seleccionado y ocultar el resto
+function mostrarProyectoSeleccionado(proyectoSeleccionado) {
+    for (let i = 0; i < proyectos.length; i++) {
+        if (proyectos[i] === proyectoSeleccionado) {
+            proyectos[i].style.display = 'flex';
+        } else {
+            proyectos[i].style.display = 'none';
         }
-    } else {
-        const filtroProyecto = `proyecto${filtro}`;
-        const proyecto = document.querySelector(`.${filtroProyecto}`);
-        proyecto.classList.add('mostrar');
     }
 }
 
-// Event listeners para los filtros
-filtroTodos.addEventListener('click', () => mostrarProyectos('todos'));
-filtroProyecto1.addEventListener('click', () => mostrarProyectos(1));
-filtroProyecto2.addEventListener('click', () => mostrarProyectos(2));
-filtroProyecto3.addEventListener('click', () => mostrarProyectos(3));
-// Agrega más event listeners para los filtros si es necesario
+// filtro por proyecto
+document.getElementById("filtrarProyectos").addEventListener("change", filtrarProyectos);
 
-// Mostrar proyectos iniciales
-mostrarProyectos('todos');
+function filtrarProyectos() {
+    var valorSeleccionado = document.getElementById("filtrarProyectos").value;
+
+    for (var i = 0; i < proyectos.length; i++) {
+        var proyecto = proyectos[i];
+
+        if (valorSeleccionado === "todos" || valorSeleccionado === proyecto.getAttribute("data-proyecto")) {
+            proyecto.style.display = "flex";
+        } else {
+            proyecto.style.display = "none";
+        }
+    }
+}
+
+// Obtener todos los botones de evaluación
+const botonesEvaluacion = document.querySelectorAll('.formulario__btn');
+
+// Agregar el evento de clic a cada botón de evaluación
+botonesEvaluacion.forEach((boton) => {
+    boton.addEventListener('click', mostrarPopupEvaluacion);
+});
+
+// Función para mostrar el popup de evaluación
+function mostrarPopupEvaluacion(event) {
+    event.preventDefault(); // Evitar el comportamiento predeterminado del botón
+
+    const proyectoSeleccionado = this.parentNode;
+    // Obtener el elemento contenedor del botón evaluación
+
+    // Mostrar solo el proyecto seleccionado y ocultar el resto
+    mostrarProyectoSeleccionado(proyectoSeleccionado);
+
+    // Obtén una referencia a los botones de evaluación
+    var evaluacion1Btn = document.getElementById("evaluacion1");
+    var evaluacion2Btn = document.getElementById("evaluacion2");
+    var evaluacion3Btn = document.getElementById("evaluacion3");
+    var evaluacion4Btn = document.getElementById("evaluacion4");
+
+    // Agrega un evento de clic a los botones
+    evaluacion1Btn.addEventListener("click", abrirPopup);
+    evaluacion2Btn.addEventListener("click", abrirPopup);
+    evaluacion3Btn.addEventListener("click", abrirPopup);
+    evaluacion4Btn.addEventListener("click", abrirPopup);
+
+    // Función para mostrar el popup de evaluación
+    function mostrarPopupEvaluacion(event) {
+        event.preventDefault(); // Evitar el comportamiento predeterminado del botón
+
+        const proyectoSeleccionado = this.parentNode;
+        // Obtener el elemento contenedor del botón evaluación
+
+        // Mostrar solo el proyecto seleccionado y ocultar el resto
+        mostrarProyectoSeleccionado(proyectoSeleccionado);
+    }
+
+    // Función para abrir la ventana emergente
+    function abrirPopup() { // Abre la ventana emergente con el contenido deseado
+        window.open("popupEvaluacion.html", "popup", "width=500,height=750");
+    }
+}

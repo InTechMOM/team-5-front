@@ -256,4 +256,11 @@ img {
     font-weight: bold;
 }
 
-/* Estilos para pantallas más pequeñas */
+.swal2-styled.swal2-confirm {
+    border: 0;
+    border-radius: 0.25em;
+    background: initial;
+    background-color: rgb(51, 72, 93);
+    color: #fff;
+    font-size: 1em;
+}

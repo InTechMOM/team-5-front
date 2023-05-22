@@ -1,6 +1,5 @@
-// Obtener referencia al botón "Guardar" y al elemento del popup
+// Obtener referencia al botón "Guardar"
 var guardarBtn = document.querySelector('.formulario__btn');
-var popup = window;
 
 // Agregar evento click al botón "Guardar"
 guardarBtn.addEventListener('click', function() {
@@ -28,6 +27,16 @@ guardarBtn.addEventListener('click', function() {
     opcionesSeleccionadas.push(checkbox.nextElementSibling.textContent);
   });
 
+  // Crear un objeto JSON con la información seleccionada
+  var proyectoSeleccionado = "Proyecto A"; // Reemplaza esto con la lógica para obtener el proyecto seleccionado
+  var json = {
+    proyecto: proyectoSeleccionado,
+    opciones: opcionesSeleccionadas
+  };
+
+  // Convertir el objeto JSON a una cadena de texto
+  var jsonString = JSON.stringify(json);
+
   // Mostrar mensaje de éxito al usuario
   Swal.fire('¡Guardado con éxito!');
 
@@ -36,9 +45,11 @@ guardarBtn.addEventListener('click', function() {
     checkbox.checked = false;
   });
 
-  // Esperar 15 segundos y luego redirigir al usuario a la pantalla principal
+  // Enviar el JSON al servidor o almacenarlo en el almacenamiento local, según tus necesidades
+  // Aquí puedes agregar la lógica para enviar o almacenar el JSON
+
+  // Esperar 2 segundos y luego redirigir al usuario a la pantalla principal
   setTimeout(function() {
-    popup.close();
-    window.opener.location.href = 'perfilDocente.html';
-  }, 2000); // 15000 milisegundos = 15 segundos
+    window.close();
+  }, 3000); // 36000 milisegundos = 3 segundos
 });

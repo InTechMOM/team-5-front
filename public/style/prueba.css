@@ -12,7 +12,8 @@ body {
 
 label {
     font-weight: bold;
-    margin: 1%;
+    text-align: center;
+    margin: 2% 0;
 }
 
 ul {
@@ -20,20 +21,12 @@ ul {
     padding: 0;
 }
 
-ul#lista1, ul#lista2, ul#lista3, ul#lista4 {
-    display: inline-flex;
-    flex-wrap: nowrap;
-    flex-direction: row;
-}
-
 .menu, .PensamientoCritico, .Creatividad, .Colaboración, .Comunicación {
-    display: inline-flex;
-    position: relative;
-    padding: 1%;
+    display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
-    align-content: flex-start;
-    justify-content: center;
+    align-items: flex-start;
+    margin-left: 2%;
+    padding: 1%;
 }
 
 .PensamientoCritico li, .Creatividad li, .Colaboración li, .Comunicación li {
@@ -106,3 +99,4 @@ input[type="checkbox"]:hover + p, input[type="checkbox"]:focus + p {
     color: #fff;
     font-size: 1em;
 }
+

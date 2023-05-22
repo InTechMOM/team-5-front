@@ -8,6 +8,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;800&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="../public/style/docente.css">
         <link rel="stylesheet" href="../public/images/css/all.min.css">
+        <link rel="stylesheet" href="sweetalert2.min.css">
         <title>Docente</title>
     </head>
 
@@ -29,11 +30,12 @@
             <form class="formulario" id="formulario">        
                     <label class="titulo">PROYECTOS</label>
                     <div class="filtro"><i class="fa-solid fa-bars"></i>
-                        <select id="filtro_proyectos">
+                        <select id="filtrarProyectos">
                             <option value="todos">Todos</option>
                             <option value="proyecto1">Lider: Laura Lee</option>
                             <option value="proyecto2">Lider: Luisa Perez</option>
-                            <option value="proyecto3">Lider: Juan Perez</option>
+                            <option value="proyecto3">Lider: Martin Garcia</option>
+                            <option value="proyecto4">Lider: Carlos Gil</option>
                         </select>
                     </div>
 
@@ -58,7 +60,6 @@
                                 <button id="evaluacion1" type="submit" class="formulario__btn">Evaluación</button>
                         </div>
                         
-                        
                         <div class="box" data-proyecto="proyecto2">
                             <div class="label-container">
                                 <label class="subtitulo">EL ÁTOMO</label>
@@ -73,12 +74,11 @@
                                     <p>Lider: Luisa Perez</p> 
                                     <p>Descripción:</p>   
                                 </div>
-                                   
                             </div>
                             <button id="evaluacion2" type="submit" class="formulario__btn">Evaluación</button>
                         </div>
 
-                        <!--div class="box" data-proyecto="proyecto3">
+                        <div class="box" data-proyecto="proyecto3">
                             <div class="label-container">
                                 <label class="subtitulo">La Luna</label>
                             </div>
@@ -89,21 +89,37 @@
                                 <div class="descripcion">
                                     <p>Proyecto: La Luna</p>
                                     <p>Materia: Ciencias</p> 
-                                    <p>Lider: Laura Lee</p> 
+                                    <p>Lider: Martin Garcia</p> 
                                     <p>Descripción:</p>   
-                                </div>
-                                   
+                                </div> 
                             </div>
-                            <button id="evaluacion2" type="submit" class="formulario__btn">Evaluación</button>
-                        </div-->
+                            <button id="evaluacion3" type="submit" class="formulario__btn">Evaluación</button>
+                        </div>
+
+                        <div class="box" data-proyecto="proyecto4">
+                            <div class="label-container">
+                                <label class="subtitulo">Los Planetas</label>
+                            </div>
+                            <div class="sub-box">
+                                <div id="video-container">
+                                     <img class="imagen-video" src="../public/images/Vector.jpg">
+                                </div>
+                                <div class="descripcion">
+                                    <p>Proyecto: Los Planetas</p>
+                                    <p>Materia: Ciencias</p> 
+                                    <p>Lider: Carlos Gil</p> 
+                                    <p>Descripción:</p>   
+                                </div> 
+                            </div>
+                            <button id="evaluacion4" type="submit" class="formulario__btn">Evaluación</button>
+                        </div>
                     </div>
             </form>
-           
         </main>
         <footer>
             <p class="footer">&copy; EdVisto 2024</p>
         </footer>
-        <script src="../script/evaluacion.js"></script>
         <script src="../script/filtro.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     </body>
 </html>
