@@ -7,24 +7,27 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;800&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="../public/style/cargarVideo.css">
-        <link rel="stylesheet" href="../public/images/css/all.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css">
         <link rel="stylesheet" href="sweetalert2.min.css">
         <title>Estudiante</title>
     </head>
 
     <body>
         <main class="container">
-            
             <nav>
                 <div class="menu">
-                    <img class="imgen-logo" src="../public/images/logo.png" alt="Logotipo de EdVisto">
-                    <button class="button1"><i class="fas fa-home"></i>Inicio</button>
-                    <button class="button1"><i class="fa-solid fa-briefcase"></i>Proyectos</button>
-                    <button class="button1"><i class="fa-solid fa-user-group"></i>Estudiantes</button>
-                    <button class="button2" type="button" value="perfil"><i class="fa-solid fa-circle-user"></i>Perfil de Usuario</button>
+                    <img src="../public/images/logo.png" alt="Logotipo de EdVisto">
+                    <button class="button1">
+                        <i class="ti ti-home"></i>Inicio</button>
+                    <button class="button1">
+                        <i class="ti ti-briefcase"></i>Proyectos</button>
+                    <button class="button2" type="button" value="perfil">
+                        <i class="ti ti-user-circle" width: 128px; stroke-width: 2.0px;></i>Perfil de Usuario</button>
                     <div class="config">
-                        <button class="button3" type="button" value="contacto">Contacto</button>
-                        <button class="button4" type="button" value="idioma">Idioma</button>
+                        <button class="button3" type="button" value="cerrarSesion">
+                            <i class="ti ti-logout"></i>Cerrar sesion</button>
+                        <button class="button4" type="button" value="idioma">
+                            <i class="ti ti-language"></i>Idioma</button>
                     </div>
                 </div>
             </nav>
@@ -43,7 +46,7 @@
                     <label for="youtube-link" class="formulario__label">Link Video:</label>
                     <div class="formulario__grupo-input">
                         <input class="formulario__input" type="text" id="youtube-link" name="youtube-link" placeholder="Ingresa el enlace de YouTube">
-                        <i class="formulario__validacion-estado fas fa-times-circle"></i>             
+                        <i class="formulario__validacion-estado fas fa-times-circle"></i>
                     </div>
                     <p class="formulario__input-error">El link de YouTube no deberia estar vacio.</p>
                     <div id="video-container">
@@ -94,7 +97,7 @@
             </form>
         </main>
         <footer>
-                <p class="footer">&copy; EdVisto 2024</p>
+            <p class="footer">&copy; EdVisto 2024</p>
         </footer>
         <script src="../script/formulario.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>

@@ -266,3 +266,14 @@ img {
     color: #fff;
     font-size: 1em;
 }
+
+i.ti.ti-user-circle,
+i.ti.ti-briefcase {
+    font-size: 150%;
+}
+
+i.ti.ti-home,
+i.ti.ti-logout,
+i.ti.ti-language {
+    font-size: 165%;
+}
