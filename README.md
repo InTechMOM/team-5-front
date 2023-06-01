@@ -12,6 +12,3 @@ https://intechmom.github.io/team-5-front/
 
 - [@margaretvanessa](https://github.com/MargaretVanessa)
 
-
--video validar que sea un video de youtube
-
