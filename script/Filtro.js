@@ -15,6 +15,7 @@ function mostrarProyectoSeleccionado(proyectoSeleccionado) {
 // filtro por proyecto
 document.getElementById("filtrarProyectos").addEventListener("change", filtrarProyectos);
 
+
 function filtrarProyectos() {
     var valorSeleccionado = document.getElementById("filtrarProyectos").value;
 
@@ -47,31 +48,11 @@ function mostrarPopupEvaluacion(event) {
     // Mostrar solo el proyecto seleccionado y ocultar el resto
     mostrarProyectoSeleccionado(proyectoSeleccionado);
 
-    // Obtén una referencia a los botones de evaluación
-    var evaluacion1Btn = document.getElementById("evaluacion1");
-    var evaluacion2Btn = document.getElementById("evaluacion2");
-    var evaluacion3Btn = document.getElementById("evaluacion3");
-    var evaluacion4Btn = document.getElementById("evaluacion4");
-
-    // Agrega un evento de clic a los botones
-    evaluacion1Btn.addEventListener("click", abrirPopup);
-    evaluacion2Btn.addEventListener("click", abrirPopup);
-    evaluacion3Btn.addEventListener("click", abrirPopup);
-    evaluacion4Btn.addEventListener("click", abrirPopup);
-
-    // Función para mostrar el popup de evaluación
-    function mostrarPopupEvaluacion(event) {
-        event.preventDefault(); // Evitar el comportamiento predeterminado del botón
-
-        const proyectoSeleccionado = this.parentNode;
-        // Obtener el elemento contenedor del botón evaluación
-
-        // Mostrar solo el proyecto seleccionado y ocultar el resto
-        mostrarProyectoSeleccionado(proyectoSeleccionado);
-    }
-
     // Función para abrir la ventana emergente
-    function abrirPopup() { // Abre la ventana emergente con el contenido deseado
-        window.open("popupEvaluacion.html", "popup", "width=500,height=750");
-    }
+    window.open("../page/popupEvaluacion.html", "popup", "width=800,height=500");
 }
+
+document.getElementById("btnCerrarSesion").addEventListener("click", function() {
+    window.location.href = "../index.html";
+});
+

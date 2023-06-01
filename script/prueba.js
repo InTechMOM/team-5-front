@@ -1,61 +1,42 @@
-const fs = require('fs');
+var myHeaders = new Headers();
+       myHeaders.append("Accept", "application/json");
+      var requestOptions = {
+        method: 'GET',
+        headers: myHeaders
+      };
+      fetch(`https://team-2-back.onrender.com/users/check-email?email=${username}`, requestOptions)
+        .then(response => {
+          if (response.ok) {
+            return response.json()
+          } else {
+         throw new Error("verifica tu user")
+          }
+        })
+        .then(result => {
+          if (rol.checked && result.rol === 'student') {
+            window.location.href ="./pages/carga-video.html"
+          } else if(!rol.checked && result.rol === 'teacher') {
+            window.location.href ="./pages/inicio-docente.html"
+          } else {
+        throw new Error("verifica tu user")
+          }})
 
-// Crear un objeto JSON con la información seleccionada
-var proyectoSeleccionado = "Proyecto A"; // Reemplaza esto con la lógica para obtener el proyecto seleccionado
-var json = {
-  proyecto: proyectoSeleccionado,
-  opciones: opcionesSeleccionadas
-};
 
-// Convertir el objeto JSON a una cadena de texto
-var jsonString = JSON.stringify(json);
 
-// Guardar el JSON en un archivo llamado "evaluacion.json"
-fs.writeFile('evaluacion.json', jsonString, 'utf8', function(err) {
-  if (err) {
-    console.log('Error al guardar el JSON: ' + err);
+        
+  if (e.target === btnEstudiante && correoValue !== "m@gmail.com") {
+    Swal.fire('Lo sentimos, el correo electrónico ingresado no corresponde a un perfil de Estudiante.');
     return;
   }
-  console.log('JSON guardado exitosamente en evaluacion.json');
-});
 
-
-
-
-
-// Crear un objeto JSON con la información seleccionada
-var proyectoSeleccionado = "Proyecto A"; // Reemplaza esto con la lógica para obtener el proyecto seleccionado
-var json = {
-  proyecto: proyectoSeleccionado,
-  opciones: opcionesSeleccionadas
-};
-
-// Convertir el objeto JSON a una cadena de texto
-var jsonString = JSON.stringify(json);
-
-// Enviar el JSON al servidor utilizando Fetch
-fetch('url_del_servidor', {
-  method: 'POST', // Puedes ajustar el método de solicitud HTTP según tus necesidades (POST, GET, etc.)
-  body: jsonString,
-  headers: {
-    'Content-Type': 'application/json'
+  if (e.target === btnDocente && correoValue !== "s@gmail.com") {
+    Swal.fire('Lo sentimos, el correo electrónico ingresado no corresponde a un perfil de Docente.');
+    return;
   }
-})
-.then(function(response) {
-  // Verificar el estado de la respuesta
-  if (response.ok) {
-    return response.json();
-  } else {
-    throw new Error('Error al enviar el JSON');
-  }
-})
-.then(function(data) {
-  // Manejar la respuesta del servidor en caso de éxito
-  console.log('JSON enviado exitosamente');
-  console.log(data);
-})
-.catch(function(error) {
-  // Manejar el error en caso de fallo
-  console.log(error);
-});
 
+  // Redireccionar a la página correspondiente
+  if (e.target === btnDocente) {
+    window.location.href = 'page/perfilDocente.html';
+  } else if (e.target === btnEstudiante) {
+    window.location.href = 'page/proyectos.html';
+  }

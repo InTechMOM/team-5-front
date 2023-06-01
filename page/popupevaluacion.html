@@ -8,7 +8,6 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;800&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="../public/style/popupevaluacion.css">
-        <link rel="stylesheet" href="sweetalert2.min.css">
         <title>Evaluación</title>
     </head>
     <body>
@@ -20,10 +19,10 @@
                     <label>Pensamiento Critico</label>
                     <div class="Lista1">
                         <ul id="lista1">
-                            <li><input type="checkbox" name="condiciones" value="1"/><p>Validez de la información</p></li>
-                            <li><input type="checkbox" name="condiciones" value="2"/><p>Análisis argumental</p></li>
-                            <li><input type="checkbox" name="condiciones" value="3"/><p>Razón y contraargumento</p></li>
-                            <li><input type="checkbox" name="condiciones" value="4"/><p>Conclusión</p></li>
+                            <li><input type="radio" name="condiciones1" value="1"/><p>Validez de la información</p></li>
+                            <li><input type="radio" name="condiciones2" value="2"/><p>Análisis argumental</p></li>
+                            <li><input type="radio" name="condiciones3" value="3"/><p>Razón y contraargumento</p></li>
+                            <li><input type="radio" name="condiciones4" value="4"/><p>Conclusión</p></li>
                         </ul>
                     </div>
                 </div>
@@ -65,7 +64,6 @@
             </div>
             <button type="submit" class="formulario__btn">Guardar</button>
         </main>
-        <script src="../script/grafico.js"></script>
         <script src="../script/Guardar.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     </body>

@@ -36,11 +36,6 @@ ul#lista1, ul#lista2, ul#lista3, ul#lista4 {
     justify-content: center;
 }
 
-.PensamientoCritico li, .Creatividad li, .Colaboración li, .Comunicación li {
-    display: flex;
-    align-items: center;
-}
-
 .Lista1, .Lista2, .Lista3, .Lista4 {
     display: flex;
     flex-wrap: wrap;
@@ -48,7 +43,9 @@ ul#lista1, ul#lista2, ul#lista3, ul#lista4 {
 
 .Lista1 li, .Lista2 li, .Lista3 li, .Lista4 li {
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: flex-start;
 }
 
 input[type="radio"], input[type="checkbox"] {

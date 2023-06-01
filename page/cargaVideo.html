@@ -8,7 +8,8 @@
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;800&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="../public/style/cargarVideo.css">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css">
-        <link rel="stylesheet" href="sweetalert2.min.css">
+        <link href="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.5/dist/sweetalert2.min.css" rel="stylesheet">
+        <base href="/">
         <title>Estudiante</title>
     </head>
 
@@ -25,7 +26,7 @@
                         <i class="ti ti-user-circle" width: 128px; stroke-width: 2.0px;></i>Perfil de Usuario</button>
                     <div class="config">
                         <button class="button3" type="button" value="cerrarSesion">
-                            <i class="ti ti-logout"></i>Cerrar sesion</button>
+                            <i class="ti ti-logout" id="btnCerrarSesion"></i>Cerrar sesion</button>
                         <button class="button4" type="button" value="idioma">
                             <i class="ti ti-language"></i>Idioma</button>
                     </div>
@@ -35,7 +36,8 @@
             <form class="formulario" id="formulario">
 
                 <div class="formulario__grupo" id="grupo__title">
-                    <div class="formulario__grupo-input">
+                    <div class="formulario__grupo-input" id="atras__grupo-imput">
+                        <buttonAtras class="buttonAtras"><i class="ti ti-arrow-left" id="btnAtras"></i></buttonAtras>
                         <input type="text" class="formulario__input" name="title" id="title" placeholder="Titulo del Proyecto" maxlength="89">
                         <i class="formulario__validacion-estado fas fa-times-circle"></i>
                     </div>
@@ -100,6 +102,6 @@
             <p class="footer">&copy; EdVisto 2024</p>
         </footer>
         <script src="../script/formulario.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.5/dist/sweetalert2.all.min.js"></script>
     </body>
 </html>

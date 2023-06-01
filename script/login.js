@@ -3,10 +3,9 @@ const correo = document.querySelector('#correo');
 const btnDocente = document.querySelector('#btn-docente');
 const btnEstudiante = document.querySelector('#btn-estudiante');
 
-correo.focus();
-
 form.addEventListener('click', function(e) {
   e.preventDefault();
+  correo.focus();
   const correoValue = correo.value;
 
   // Validar correo electrónico
@@ -16,12 +15,12 @@ form.addEventListener('click', function(e) {
     return;
   }
 
-  if (e.target === btnEstudiante && correoValue !== "m@gmail.com") {
+  if (e.target === btnEstudiante && correoValue !== "estudiante@gmail.com") {
     Swal.fire('Lo sentimos, el correo electrónico ingresado no corresponde a un perfil de Estudiante.');
     return;
   }
 
-  if (e.target === btnDocente && correoValue !== "s@gmail.com") {
+  if (e.target === btnDocente && correoValue !== "docente@gmail.com") {
     Swal.fire('Lo sentimos, el correo electrónico ingresado no corresponde a un perfil de Docente.');
     return;
   }

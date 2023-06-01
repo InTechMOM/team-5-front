@@ -105,21 +105,19 @@ function agregarVideo() {
 	}
   }
 
-  formulario.addEventListener('submit', (e) => {
-    e.preventDefault();
 
-    if (campos.title && campos.description && campos.lider && campos.correo) {
-        formulario.reset();
-        document.getElementById('formulario__mensaje-exito').classList.add('formulario__mensaje-exito-activo');
-        setTimeout(() => {
-            document.getElementById('formulario__mensaje-exito').classList.remove('formulario__mensaje-exito-activo');
-            // Redireccionar a la pantalla anterior
-            window.location.href = 'proyectos.html';
-        }, 2000);
-        document.querySelectorAll('.formulario__grupo-correcto').forEach((icono) => {
-            icono.classList.remove('formulario__grupo-correcto');
-        });
-    } else {
-        document.getElementById('formulario__mensaje').classList.add('formulario__mensaje-activo');
-    }
+document.getElementById("btnCerrarSesion").addEventListener("click", function() {
+    window.location.href = "../index.html";
+});
+
+// Obtén una referencia al botón "buttonAtras"
+const btnAtras = document.getElementById('btnAtras');
+
+// Agrega un evento de clic al botón
+btnAtras.addEventListener('click', function() {
+  // Redirige a la página inicial en la pestaña anterior
+  window.history.go(-1);
+
+  // Opcionalmente, cierra la pestaña actual
+  window.close();
 });

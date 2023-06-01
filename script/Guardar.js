@@ -53,3 +53,7 @@ guardarBtn.addEventListener('click', function() {
     window.close();
   }, 3000); // 36000 milisegundos = 3 segundos
 });
+
+document.getElementById("btnCerrarSesion").addEventListener("click", function() {
+  window.location.href = "../index.html";
+});

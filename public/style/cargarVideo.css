@@ -151,12 +151,29 @@ iframe {
     display: block;
     font-weight: 700;
     cursor: pointer;
-    margin-left: 60px;
+    margin-left: 68px;
     margin-top: 10px;
 }
 
 #title {
     text-align: center;
+}
+
+.buttonAtras {
+    border: none;
+    background-color: white;
+}
+
+
+div#atras__grupo-imput {
+    display: flex;
+    padding-left: 5%;
+    flex-wrap: wrap;
+    padding-left: 15%;
+}
+
+i.ti.ti-arrow-left {
+    font-size: 150%;
 }
 
 .formulario__input {
@@ -172,6 +189,7 @@ iframe {
     margin-right: 5%;
     margin-left: 5%;
     width: 100%;
+    padding: 0 40px 0 20px;
 }
 
 .formulario__input:focus {
@@ -183,7 +201,7 @@ iframe {
 .formulario__input-error {
     font-size: 11px;
     display: none;
-    padding-left: 60px;
+    padding-left: 34%;
     color: red;
     font-weight: bold;
 }
@@ -289,7 +307,7 @@ iframe {
     text-align: center;
     color: black;
     font-weight: bold;
-    font-size: 11px;
+    width: 130%;
 }
 .swal2-styled.swal2-confirm {
     border: 0;
