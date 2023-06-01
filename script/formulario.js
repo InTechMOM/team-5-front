@@ -105,7 +105,6 @@ function agregarVideo() {
 	}
   }
 
-
 document.getElementById("btnCerrarSesion").addEventListener("click", function() {
     window.location.href = "../index.html";
 });

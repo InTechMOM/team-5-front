@@ -35,6 +35,8 @@ img{
 }
 
 .footer {
-    margin-top : 30px;
-    font-weight : bold;
+    text-align: center;
+    color: black;
+    font-weight: bold;
+    width: 100%;
 }
