@@ -49,7 +49,7 @@ function mostrarPopupEvaluacion(event) {
     mostrarProyectoSeleccionado(proyectoSeleccionado);
 
     // Función para abrir la ventana emergente
-    window.open("../page/popupEvaluacion.html", "popup", "width=800,height=300");
+    window.open("../page/popupEvaluacion.html", "popup", "width=800,height=450");
 }
 
 document.getElementById("btnCerrarSesion").addEventListener("click", function() {

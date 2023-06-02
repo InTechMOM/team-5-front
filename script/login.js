@@ -3,6 +3,7 @@ const correo = document.querySelector('#correo');
 const btnDocente = document.querySelector('#btn-docente');
 const btnEstudiante = document.querySelector('#btn-estudiante');
 
+correo.focus();
 form.addEventListener('click', function(e) {
   e.preventDefault();
   correo.focus();

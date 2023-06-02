@@ -48,7 +48,7 @@ ul#lista1, ul#lista2, ul#lista3, ul#lista4 {
     align-content: flex-start;
 }
 
-input[type="radio"], input[type="checkbox"] {
+input[type="checkbox"], input[type="checkbox"] {
     cursor: pointer;
     appearance: auto;
     border-radius: 50%;

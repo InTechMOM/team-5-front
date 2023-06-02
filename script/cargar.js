@@ -7,6 +7,5 @@ document.getElementById("btnCerrarSesion").addEventListener("click", function ()
 });
 
 document.getElementById("btnResultado").addEventListener("click", function () {
-   // window.open("../page/popupResultados.html");
     window.open("../page/popupResultados.html", "popup", "width=800,height=500");
 });
