@@ -14,8 +14,6 @@ function mostrarProyectoSeleccionado(proyectoSeleccionado) {
 
 // filtro por proyecto
 document.getElementById("filtrarProyectos").addEventListener("change", filtrarProyectos);
-
-
 function filtrarProyectos() {
     var valorSeleccionado = document.getElementById("filtrarProyectos").value;
 
@@ -52,7 +50,6 @@ function mostrarPopupEvaluacion(event) {
     window.open("../page/popupEvaluacion.html", "popup", "width=800,height=450");
 }
 
-document.getElementById("btnCerrarSesion").addEventListener("click", function() {
+document.getElementById("btnCerrarSesion").addEventListener("click", function () {
     window.location.href = "../index.html";
 });
-

@@ -179,6 +179,7 @@ img {
     margin-right: 5%;
     flex-wrap: nowrap;
     flex-direction: row;
+    font-size: 8px;
 }
 
 .descripcion{
